@@ -1,0 +1,211 @@
+// 1-ая часть 
+.about__part1 {
+  border-bottom: 1px solid $outline;
+  padding: 0 0 72px 0;
+}
+
+.about__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-img {
+  width: 552px;
+  height: 290px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.about__content {
+  max-width: 512px;
+  width: 100%;
+}
+
+.about-title:not(:last-child) {
+  margin: 0 0 8px 0;
+}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  margin: 12px 0 0 0;
+}
+
+.about-item {
+  display: inline-block;
+  margin: 0 8px 0 0;
+
+  &:not(:last-child)::after {
+    content: url('../img/plus.svg');
+    margin: 0 0 0 8px;
+  }
+}
+
+.about-text {
+  margin: 0 0 8px 0;
+  
+  &:first-child {
+    margin: 28px 0 8px 0;
+  }
+
+  & a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
+.about-btn {
+  margin: 32px 0 0 0;
+}
+
+// 2-ая часть
+
+.about__part2 {
+  padding: 72px 0 0 0;
+
+  & .about__body {
+    align-items: flex-start;
+  }
+
+  & .about-text {
+
+    &:first-child {
+      margin: 0 0 8px 0;
+    }
+  }
+}
+
+.about__slogan {
+  max-width: 400px;
+  width: 100%;
+  padding: 28px 40px;
+  border: 1px dashed $accent;
+  stroke-dasharray: 4;
+  stroke-dashoffset: 2;
+  border-radius: 20px;
+  margin: 40px 0 0 0;
+}
+
+.about__slogan-title {
+  color: $second;
+}
+
+.about__slogan-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0 0 0;
+}
+
+.about__insta {
+  position: relative;
+}
+
+.about__insta__body {
+  max-width: 322px;
+  width: 100%;
+  height: 366px;
+  border-radius: 15px;
+  overflow: hidden;
+  filter: drop-shadow(0px 20px 60px rgba(112, 73, 27, 0.2));
+}
+.about__slide__header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 6px 12px;
+}
+
+.about__slide-icon {
+  width: 28px;
+  height: 28px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about__insta__text {
+  margin: 0 0 0 8px;
+}
+
+.about__insta-account {
+  font-size: 14px;
+}
+
+.about__insta-city {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.about__slider {
+  width: 100%;
+  height: calc(100% - 47px);
+}
+
+.about__slide-img {
+  width: 100%;
+  height: 100%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.slider-arrow {
+  width: 40px;
+  height: 40px;
+  transition: $tr;
+  
+  &:after {
+    display: none;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-button-prev {
+  margin: 0 0 0 -70px;
+}
+
+.swiper-button-next {
+  margin: 0 -70px 0 0;
+}
+
+.about__insta__style__arrow {
+  position: absolute;
+  top: 80%;
+  transform: translate(0,-50%);
+  left: -220px;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  pointer-events: none;
+
+  &-text {
+    color: $outline;
+    text-align: right;
+    transform: rotate(8deg);
+    margin: 0 10px 0 0;
+  }
+}

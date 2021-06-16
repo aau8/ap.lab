@@ -1,0 +1,209 @@
+//<ШРИФТЫ>===============================================================================================================================================================
+
+//<Подключаем шрифты>===============================================================================================================================================================
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
+//</Подключаем шрифты>==============================================================================================================================================================
+
+//<Шрифт по умолчанию>===============================================================================================================================================================
+$fontFamily: "Montserrat";
+//</Шрифт по умолчанию>==============================================================================================================================================================
+
+//</ШРИФТЫ>==============================================================================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===============================================================================================================================================================
+$maxWidthContainer: 1160;
+$minHover: 0; // если хочешь убрать hover на телефонах, укажи - 768px
+
+:root {
+  --main: #222222;
+  --second: #555555;
+  --accent: #D2A158;
+  --outline: #DADADA;
+  --bg: #F6F3EF;
+  --linear: linear-gradient(96.71deg, #FFBB3E 1.86%, #FF870F 118.91%);
+  --linear-bg: linear-gradient(180deg, #0FC5FF 0%, #0FC5FF 0.01%, #0F7CFF 100%);
+  --tr: .2s; // transition
+}
+$main: var(--main);
+$second: var(--second);
+$accent: var(--accent);
+$outline: var(--outline);
+$bg: var(--bg);
+$linear: var(--linear);
+$linearBg: var(--linear-bg);
+$tr: var(--tr);
+//</ПЕРЕМЕННЫЕ>==============================================================================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================================================================================
+@import '_reset';
+
+html {
+  scroll-behavior: smooth; // делает плавные переходы по якорям
+}
+body {
+  color: $main;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  &._lock {
+    overflow: hidden;
+  }
+}
+a {
+  color: $accent;
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>==============================================================================================================================================================
+
+//<ОБОЛОЧКА>===============================================================================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+}
+//</ОБОЛОЧКА>==============================================================================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===============================================================================================================================================================
+.container {
+  max-width: $maxWidthContainer + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+//<ОБЩИЕ СТИЛИ>==================================================================================
+section {
+  margin: 0 0 100px 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+
+  // @media screen and (max-width: 600px) {
+  //   font-size: 40px;
+  //   margin: 24px 0 0 0;
+  // }
+
+  // @media screen and (max-width: 400px) {
+  //   font-size: 32px;
+  //   margin: 12px 0 0 0;
+  // }
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid $accent;
+  border-radius: 5px;
+  background: $accent;
+  text-align: center;
+  transition: $tr;
+
+  @media screen and (max-width: 1120px) {
+    font-size: 14px;
+    padding: 16px 32px;
+  }
+
+  @media screen and (min-width: $minHover) {
+    &:hover {
+      background: #f0be73;
+    }
+  }
+
+  &:active {
+    background: linear-gradient(96.71deg, #FFCC70 1.86%, #FFA142 118.91%);
+  }
+}
+
+.btn-outline {
+  font-size: 16px;
+  font-weight: 500;
+  color: $accent;
+  padding: 12px 20px;
+  border: 1px solid $accent;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  transition: $tr;
+
+  @media screen and (min-width: $minHover) {
+    &:hover {
+      transform: translate(0,-4px);
+    }
+  }
+
+  &:active {
+    background: linear-gradient(96.71deg, #FFCC70 1.86%, #FFA142 118.91%);
+  }
+}
+
+// input,
+// textarea {
+//   font-weight: 400;
+//   color: $second;
+//   background: #F7FBFD;
+//   border-radius: 8px;
+//   padding: 15px 18px;
+// }
+
+.arrow-up {
+  display: inline-block;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: rgba(255,255,255,.3);
+  border: 1px solid rgb(15, 124, 255);
+  border-radius: 4px;
+  transform: scale(.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+  z-index: 100;
+  &._show {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media screen and (min-width: $minHover) {
+    &:hover {
+      transform: translate(0,-4px);
+    }
+  }
+
+  &:active {
+    background: rgba(15, 124, 255,.2);
+  }
+}
+
+@import '_general';
+@import 'blocks/_header';
+@import 'blocks/_main';
+@import 'blocks/_advantages';
+@import 'blocks/_popular';
+@import 'blocks/_category';
+@import 'blocks/_mission';
+@import 'blocks/_about';
+@import 'blocks/_footer';
+@import 'blocks/_breadcrumbs';
+
+

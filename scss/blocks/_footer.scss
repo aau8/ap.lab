@@ -1,0 +1,146 @@
+.footer {
+  background: $bg;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.footer__menu__list {
+  margin: 28px 0 0 0;
+}
+
+.footer__menu__column {
+  padding: 0 50px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.footer__menu__column:not(:last-child) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+    width: 1px;
+    height: 60%;
+    background: $outline;
+  }
+}
+
+.footer__menu__list {
+  max-width: 230px;
+  width: 100%;
+  // grid-template-columns: repeat(2,1fr);
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &-text {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0 0 0 12px;
+  }
+}
+
+.footer__contacts__list {
+  margin: 20px 0 0 0;
+}
+
+.footer__contacts__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin: 0 0 14px 0;
+  }
+}
+
+.footer__contacts-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__contacts-text {
+}
+
+.footer__contacts-text-label {
+}
+
+.footer__contacts-text-link {
+  font-weight: 500;
+  color: $main;
+}
+
+.footer__menu__list-about {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+}
+
+.footer__menu-item {
+
+  &:not(:last-child) {
+    margin: 0 16px 12px 0;
+  }
+
+  & a {
+    color: $main;
+  }
+}
+
+.footer__down {
+  background: #F5EEE5;
+  padding: 8px 0;
+}
+
+.footer__down__body {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0 40px 0 0;
+}
+
+.footer-policy {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: $main;
+  margin: 0 auto 0 0;
+}
+
+.footer-dev {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: $main;
+  margin: 0 0 0 auto;
+}

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin: 50px 0 20px 0;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item {
+
+  &:not(:first-child) {
+    margin: 0 0 0 10px;
+  }
+
+  &:not(:last-child) {
+    &::after {
+      content: url('../img/breadcrumbs-arrow.svg');
+      margin: 0 0 0 10px;
+    }
+  }
+
+  & a {
+    font-size: 14px;
+    color: $main;
+  }
+
+  &:last-child a {
+    color: $second;
+    pointer-events: none;
+  }
+}

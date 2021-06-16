@@ -1,0 +1,24 @@
+.mission {
+  height: 416px;
+  background: $bg;
+  background-image: url('../img/vegetables.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50%;
+
+  & .container {
+    height: 100%;
+  }
+}
+
+.mission__body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.mission-text {
+  max-width: 648px;
+  width: 100%;
+  font-size: 28px;
+  font-weight: 500;
+}

@@ -1,0 +1,98 @@
+// Шапка с заголовком и ссылкой
+.section__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 0 48px 0;
+}
+
+.section__header__all {
+  display: flex;
+  align-items: center;
+}
+
+.section__header__all-icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 10px;
+}
+
+// Маленькая карточка продукта
+.product-card__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  justify-items: center;
+}
+
+.product-card {
+  max-width: 264px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  filter: drop-shadow(0px 20px 40px rgba(112, 73, 27, 0.08));
+  position: relative;
+  transition: $tr;
+
+  &:hover {
+    transform: translate(0,-5px);
+  }
+
+  &._hit .product-card-label-hit {
+    display: inline-block;
+  }
+
+  &._new .product-card-label-new {
+    display: inline-block;
+  }
+}
+
+.product-card-img {
+  width: 100%;
+  height: 200px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.product-card-label {
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 14px;
+  background: #F6F3EF;
+  border-radius: 12px 6px;
+  padding: 4px 8px;
+}
+
+.product-card__content {
+  padding: 16px 24px;
+}
+
+.product-card-title {
+  color: $main;
+}
+
+.product-card__buy {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.product-card__buy-price {
+  color: $main;
+}
+
+.product-card__buy-correction {
+  color: $second;
+  margin: 0 0 0 8px;
+}
