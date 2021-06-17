@@ -33,3 +33,29 @@ const swiperMainProduct = new Swiper('.product-main-slider .swiper-container', {
     swiper: swiperSecondProduct,
   },
 });
+
+// Открытие меню
+const burger = document.querySelector('.header__menu__burger'),
+      menu = document.querySelector('.header__menu__block');
+
+burger.addEventListener('click', (e) => {
+  e.stopPropagation();
+  burger.classList.toggle('_active');
+  menu.classList.toggle('_show');
+
+  closeMenuWhenClickBg();
+})
+
+function closeMenuWhenClickBg() {
+  document.addEventListener('click', (e) => {
+    const target = e.target,
+          itsMenu = target == menu || menu.contains(target),
+          itsBurger = target == burger,
+          menuIsOpen = menu.classList.contains('_show');
+
+    if (!itsMenu && !itsBurger && menuIsOpen) {
+      burger.classList.remove('_active');
+      menu.classList.remove('_show');
+    }
+  })
+}

@@ -9,6 +9,10 @@
   & .container {
     height: 100%;
   }
+
+  @media screen and (max-width: $wwa3 + px) {
+    height: 356px;
+  }
 }
 
 .main__body {
@@ -21,6 +25,14 @@
 .main__content {
   max-width: 585px;
   width: 100%;
+
+  @media screen and (max-width: $wwa2 + px) {
+    max-width: 355px;  
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    max-width: 288px;  
+  }
 }
 
 .main-text {
