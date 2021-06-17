@@ -121,6 +121,7 @@
   }
 
   & .about__content {
+    margin: 0;
 
     @media screen and (max-width: $wwa + px) {
       width: 100%;
