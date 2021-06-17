@@ -4,11 +4,21 @@
   align-items: flex-end;
   justify-content: space-between;
   margin: 0 0 48px 0;
+
+  @media screen and (max-width: $wwa3 + px) {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 24px 0;
+  }
 }
 
 .section__header__all {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: $wwa3 + px) {
+    margin: 12px 0 0 0;
+  }
 }
 
 .section__header__all-icon {
@@ -28,9 +38,12 @@
   row-gap: 24px;
   justify-items: center;
 
-  @media screen and (max-width: $wwa) {
+  @media screen and (max-width: $wwa + px) {
     grid-template-columns: repeat(2, 1fr);
-    
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

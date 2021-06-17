@@ -6,12 +6,16 @@
 
 .about__body {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: $wwa3 + px) {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .about-img {
-  width: 552px;
+  width: 50%;
   height: 290px;
   border-radius: 10px;
   overflow: hidden;
@@ -22,11 +26,38 @@
     object-fit: cover;
     object-position: center;
   }
+
+  @media screen and (max-width: $wwa + px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: $wwa2 + px) {
+    height: 180px;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .about__content {
-  max-width: 512px;
-  width: 100%;
+  // max-width: 512px;
+  width: 50%;
+  margin: 0 0 0 48px;
+
+  @media screen and (max-width: $wwa + px) {
+    margin: 0 0 0 32px;
+  }
+
+  @media screen and (max-width: $wwa2 + px) {
+    width: 100%;
+    margin: 0 0 0 20px;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    margin: 24px 0 0 0;
+  }
 }
 
 .about-title:not(:last-child) {
@@ -37,6 +68,10 @@
   display: flex;
   align-items: center;
   margin: 12px 0 0 0;
+
+  @media screen and (max-width: $wwa3 + px) {
+    flex-wrap: wrap;
+  }
 }
 
 .about-item {
@@ -53,7 +88,7 @@
   margin: 0 0 8px 0;
   
   &:first-child {
-    margin: 28px 0 8px 0;
+    margin: 24px 0 8px 0;
   }
 
   & a {
@@ -67,7 +102,7 @@
 }
 
 .about-btn {
-  margin: 32px 0 0 0;
+  margin: 22px 0 0 0;
 }
 
 // 2-ая часть
@@ -77,6 +112,19 @@
 
   & .about__body {
     align-items: flex-start;
+    position: relative;
+
+    @media screen and (max-width: $wwa + px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  & .about__content {
+
+    @media screen and (max-width: $wwa + px) {
+      width: 100%;
+    }
   }
 
   & .about-text {
@@ -96,6 +144,14 @@
   stroke-dashoffset: 2;
   border-radius: 20px;
   margin: 40px 0 0 0;
+
+  @media screen and (max-width: $wwa + px) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: $wwa2 + px) {
+    max-width: none;
+  }
 }
 
 .about__slogan-title {
@@ -110,6 +166,18 @@
 
 .about__insta {
   position: relative;
+
+  @media screen and (max-width: $wwa + px) {
+    margin: -200px -420px 0 0;
+  }
+
+  @media screen and (max-width: $wwa2 + px) {
+    margin: 40px 0 0 0;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+  }
 }
 
 .about__insta__body {
@@ -119,6 +187,10 @@
   border-radius: 15px;
   overflow: hidden;
   filter: drop-shadow(0px 20px 60px rgba(112, 73, 27, 0.2));
+
+  @media screen and (max-width: $wwa3 + px) {
+    margin: 0 auto;
+  }
 }
 .about__slide__header {
   display: flex;
@@ -182,6 +254,10 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: $wwa3 + px) {
+    // position: initial;
+  }
 }
 
 .swiper-button-prev {
@@ -207,5 +283,9 @@
     text-align: right;
     transform: rotate(8deg);
     margin: 0 10px 0 0;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    display: none;
   }
 }

@@ -4,6 +4,10 @@
   column-gap: 24px;
   row-gap: 24px;
   justify-items: center;
+
+  @media screen and (max-width: $wwa3 + px) {
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 .category__item {
@@ -23,6 +27,14 @@
         height: 180px;
       }
     }
+  }
+
+  @media screen and (max-width: $wwa + px) {
+    height: 280px;
+  }
+
+  @media screen and (max-width: $wwa2 + px) {
+    height: 200px;
   }
 }
 
@@ -53,8 +65,10 @@
   position: absolute;
   bottom: 32px;
   left: 50%;
+  width: 100%;
   transform: translate(-50%,0);
   font-size: 18px;
   font-weight: 500;
   color: #fff;
+  text-align: center;
 }
