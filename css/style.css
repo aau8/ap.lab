@@ -147,7 +147,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .container {
     max-width: 612px;
   }
@@ -175,6 +175,25 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .btn {
@@ -343,7 +362,7 @@ h4 {
   justify-items: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400) {
   .product-card__list {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -658,7 +677,7 @@ h4 {
   pointer-events: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000) {
   .header__search {
     display: none;
   }
@@ -982,7 +1001,7 @@ h4 {
           align-items: center;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400) {
   .advantages__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1000,7 +1019,7 @@ h4 {
   margin: 0 24px 0 0;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400) {
   .advantages-icon {
     margin: 0 0 16px 0;
   }
@@ -1643,6 +1662,12 @@ h4 {
   margin: 40px 0 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .blog__body {
+    margin: 32px 0 0 0;
+  }
+}
+
 .blog__list {
   display: -ms-grid;
   display: grid;
@@ -1652,6 +1677,20 @@ h4 {
      -moz-column-gap: 24px;
           column-gap: 24px;
   row-gap: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  .blog__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .blog__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .blog__card-img {
@@ -1667,6 +1706,12 @@ h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 1400px) {
+  .blog__card-img {
+    height: 160px;
+  }
 }
 
 .blog__card-date {
@@ -1707,6 +1752,12 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0 0 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__pagin__arrows {
+    padding: 0 0 0 18px;
+  }
 }
 
 .blog__pagin-arrow {
@@ -1778,4 +1829,10 @@ h4 {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--main);
+}
+
+@media screen and (max-width: 768px) {
+  .blog__pagin-item:nth-child(4), .blog__pagin-item:nth-child(5) {
+    display: none;
+  }
 }

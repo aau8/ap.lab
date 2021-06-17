@@ -12,8 +12,9 @@ $fontFamily: "Montserrat";
 
 //<ПЕРЕМЕННЫЕ>===============================================================================================================================================================
 $maxWidthContainer: 1160;
-$wwa: 1400px;
-$wwa2: 1000px;
+$wwa: 1400;
+$wwa2: 1000;
+$wwa3: 768;
 $minHover: 0; // если хочешь убрать hover на телефонах, укажи - 768px
 
 :root {
@@ -79,11 +80,11 @@ a {
   margin: 0 auto;
   padding: 0 16px;
 
-  @media screen and (max-width: $wwa) {
+  @media screen and (max-width: $wwa + px) {
     max-width: 840px; 
   }
 
-  @media screen and (max-width: $wwa2) {
+  @media screen and (max-width: $wwa + px) {
     max-width: 612px; 
   }
 }
@@ -121,6 +122,28 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (max-width: $wwa3 + px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .btn {
