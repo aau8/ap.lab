@@ -12,9 +12,9 @@ $fontFamily: "Montserrat";
 
 //<ПЕРЕМЕННЫЕ>===============================================================================================================================================================
 $maxWidthContainer: 1160;
-$wwa: 1400;
-$wwa2: 1000;
-$wwa3: 768;
+$wwa: 1200;
+$wwa2: 900;
+$wwa3: 670;
 $minHover: 0; // если хочешь убрать hover на телефонах, укажи - 768px
 
 :root {
@@ -84,7 +84,7 @@ a {
     max-width: 840px; 
   }
 
-  @media screen and (max-width: $wwa + px) {
+  @media screen and (max-width: $wwa2 + px) {
     max-width: 612px; 
   }
 }
@@ -141,7 +141,7 @@ h4 {
   }
   
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 }
