@@ -7,7 +7,6 @@
   <title>Полезное питание</title>
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/ico"> -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
   <div class="wrapper">
@@ -105,58 +104,285 @@
           </div>
         </div>
     </header>
-    <main class="main">
+    <div class="catalog__menu">
       <div class="container">
-        <div class="main__body">
-          <div class="main__content">
-            <h1 class="main-title">Дополни свой рацион вкусными и полезными продуктами</h1>
-            <div class="main-text">Создаем неповторимый вкус и удовольствие от потребления здоровых продуктов питания.</div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <section class="advantages">
-      <div class="container">
-        <div class="advantages__body">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_delivery.svg" alt="Доставка"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Экспресс-доставка</h4>
-                <p class="advantages-text">Доставляем и оставляем товар прямо у вашей двери</p>
-              </div>
+        <div class="catalog__menu__body">
+          <ul class="catalog__menu__list">
+            <li class="catalog__menu__item">
+              <a href="#nut_pastes" class="catalog__menu__link">
+                <div class="catalog__menu-icon"><img src="img/hazelnut.svg" alt="орех"></div>
+                <span class="catalog__menu-text">Ореховые пасты</span>
+              </a>
             </li>
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_like.svg" alt="Like"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Гарантия качества</h4>
-                <p class="advantages-text">Продукция проходят тщательную проверку</p>
-              </div>
+            <li class="catalog__menu__item">
+              <a href="#sports_nutrition" class="catalog__menu__link">
+                <div class="catalog__menu-icon"><img src="img/icon_apple.svg" alt="спорт"></div>
+                <span class="catalog__menu-text">Спортивное питание</span>
+              </a>
             </li>
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_wallet.svg" alt="Кошелек"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Оплата после доставки</h4>
-                <p class="advantages-text">Удобные способы оплаты: наличными, картой</p>
-              </div>
+            <li class="catalog__menu__item">
+              <a href="#sublimates" class="catalog__menu__link">
+                <div class="catalog__menu-icon"><img src="img/drought.svg" alt="сублиматы"></div>
+                <span class="catalog__menu-text">Сублиматы</span>
+              </a>
+            </li>
+            <li class="catalog__menu__item">
+              <a href="#sweeteners" class="catalog__menu__link">
+                <div class="catalog__menu-icon"><img src="img/sugar.svg" alt="сахар"></div>
+                <span class="catalog__menu-text">Сахарозаменители</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__body">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Каталог товаров  </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__body">
+          <h1 class="catalog-title">Каталог товаров</h1>
+          <div id="nut_pastes" class="catalog__category">
+            <div class="section__header catalog__header">
+              <h3 class="section__header-title">Ореховые пасты</h3>
+            </div>
+            <ul class="product-card__list catalog__product-card">
+              <li class="product-card popular-card">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product1.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховые конфеты, 15 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 190</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>160</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _hit">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product2.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Инжир в двойном шоколаде, 6 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 750</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>250</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _new">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product3.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховая паста</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>680</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>200</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="sports_nutrition" class="catalog__category">
+            <div class="section__header catalog__header">
+              <h3 class="section__header-title">Спортивное питание</h3>
+            </div>
+            <ul class="product-card__list catalog__product-card">
+              <li class="product-card popular-card">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product1.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховые конфеты, 15 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 190</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>160</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _hit">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product2.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Инжир в двойном шоколаде, 6 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 750</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>250</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _new">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product3.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховая паста</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>680</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>200</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card ">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product4.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-oреховые конфеты АОКИ, 9 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>670</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>108</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card ">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product4.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-oреховые конфеты АОКИ, 9 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>670</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>108</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card ">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product4.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-oреховые конфеты АОКИ, 9 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>670</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>108</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="sublimates" class="catalog__category">
+            <div class="section__header catalog__header">
+              <h3 class="section__header-title">Сублиматы</h3>
+            </div>
+            <ul class="product-card__list catalog__product-card">
+              <li class="product-card popular-card">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product1.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховые конфеты, 15 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 190</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>160</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _hit">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product2.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Инжир в двойном шоколаде, 6 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 750</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>250</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _new">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product3.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховая паста</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>680</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>200</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="sweeteners" class="catalog__category">
+            <div class="section__header catalog__header">
+              <h3 class="section__header-title">Сахарозаменители</h3>
+            </div>
+            <ul class="product-card__list catalog__product-card">
+              <li class="product-card popular-card _hit">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product2.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Инжир в двойном шоколаде, 6 шт.</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>1 750</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>250</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+              <li class="product-card popular-card _new">
+                <a href="#" class="product-card-link">
+                <div class="product-card-img"><img src="img/product3.png" alt="продукт"></div>
+                <span class="product-card-label product-card-label-hit">Хит</span>
+                <span class="product-card-label product-card-label-new">Новинка</span>
+                <div class="product-card__content">
+                  <h4 class="product-card-title">Шоколадно-ореховая паста</h4>
+                  <div class="product-card__buy">
+                    <span class="product-card__buy-price"><span>680</span> RUB</span>
+                    <span class="product-card__buy-correction">за <span>200</span> гр.</span>
+                  </div>
+                </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </section>
-    <section class="popular">
+    <section class="popular popular-with-bg">
       <div class="container">
         <div class="popular__body">
           <div class="section__header">
             <h2 class="section__header-title">Популярные товары</h2>
-            <a href="#" class="section__header__all">
-              <span class="section__header__all-text">Смотреть весь каталог</span>
-              <span class="section__header__all-icon">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.5 1L8.5 6L3.5 11" stroke="#D2A158"/>
-                </svg>
-              </span>
-            </a>
           </div>
           <ul class="product-card__list popular__list">
             <li class="product-card popular-card">
@@ -216,128 +442,6 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section class="category">
-      <div class="container">
-        <div class="category__body">
-          <div class="section__header">
-            <h2 class="section__header-title">Категории товаров</h2>
-          </div>
-          <ul class="category__list">
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img1.png" alt="картинка"></div>
-                <h5 class="category__item-title">Ореховые пасты</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img2.png" alt="картинка"></div>
-                <h5 class="category__item-title">Спортивное питание</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img3.png" alt="картинка"></div>
-                <h5 class="category__item-title">Сублиматы</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img4.png" alt="картинка"></div>
-                <h5 class="category__item-title">Сахарозаменители</h5>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="mission">
-      <div class="container">
-        <div class="mission__body">
-          <div class="mission-text">Наша миссия — вносить вклад в развитие мирового рынка здоровых продуктов питания и поддерживать общемировой тренд здорового образа жизни.</div>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__header-title">О компании</h2>
-          <a href="#" class="section__header__all">
-            <span class="section__header__all-text">Читать наш блог</span>
-            <span class="section__header__all-icon">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 1L8.5 6L3.5 11" stroke="#D2A158"/>
-              </svg>
-            </span>
-          </a>
-        </div>
-        <div class="about__part1">
-          <div class="about__body">
-            <div class="about-img"><img src="img/about-img.png" alt="исследования"></div>
-            <div class="about__content">
-              <h4 class="about-title">Наше производство это:</h4>
-              <ul class="about__list">
-                <li class="about-item">Качество</li>
-                <li class="about-item">Натуральность</li>
-                <li class="about-item">Открытость</li>  
-              </ul>
-              <div>
-                <p class="about-text">Ap.Lab – это новый бренд на рынке производства продуктов здорового питания, созданный в 2021 году, но уже успевший занять достойное место в сердцах своих покупателей.</p>
-                <p class="about-text">Мы – это команда профессионалов, которые любят создавать «ВКУС». Наша команда технологов разработала уникальную рецептуру для <a href="#">линейки нашей продукции</a>.</p>
-              </div>
-              <button class="btn-outline about-btn">Связаться с нами</button>
-            </div>
-          </div>
-        </div>
-        <div class="about__part2">
-          <div class="about__body">
-            <div class="about__content">
-              <div>
-                <p class="about-text">Наша первостепенная задача – качество создаваемого продукта. Для изготовления нашей продукции мы отбираем только лучшие ингредиенты.</p>
-                <p class="about-text">Компания Ap.Lab работает честно, мы открыты перед своими потребителями.</p>
-                <p class="about-text">Мы предлагаем своим покупателям натуральный, качественный, с пониженной калорийностью продукт, но при этом не менее вкусныйМы предлагаем своим покупателям натуральный, качественный, с пониженной калорийностью продукт, но при этом не менее вкусный.</p>
-              </div>
-              <div class="about__slogan">
-                <h5 class="about__slogan-title">Девиз нашей команды –</h5>
-                <div class="about__slogan-text">Люби то, что делаешь и ешь то, что любишь, а нашу продукцию невозможно не любить</div>
-              </div>
-            </div>
-            <div class="about__insta">
-              <div class="about__insta__body">
-                <div class="about__slide__header">
-                  <div class="about__slide-icon"><img src="img/insta-logo.png" alt="логотип"></div>
-                  <div class="about__insta__text">
-                    <span class="about__insta-account">ap.lab.company</span>
-                    <span class="about__insta-city">Moscow</span>
-                  </div>
-                </div>
-                <div class="swiper-container about__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/img_inst.png" alt="картинка"></div>
-                    </div>
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/product1.png" alt="картинка"></div>
-                    </div>
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/product2.png" alt="картинка"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__arrows">
-                <div class="slider-arrow swiper-button-prev"><img src="img/arrow.svg" alt="" style="transform:rotate(180deg)"></div>
-                <div class="slider-arrow swiper-button-next"><img src="img/arrow.svg" alt=""></div>
-              </div>
-              <div class="about__insta__style__arrow">
-                <span class="about__insta__style__arrow-text">Наш<br>Instagram</span>
-                <div class="about__insta__style__arrow-icon"><img src="img/style-arrow.svg" alt=""></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -404,7 +508,6 @@
       </div>
     </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

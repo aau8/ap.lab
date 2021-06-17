@@ -1,5 +1,11 @@
-// Вверхняя часть меню
+.header {
+  
+  &._shadow {
+    box-shadow: 0px 10px 40px rgba(112, 73, 27, 0.05);
+  }
+}
 
+// Вверхняя часть меню
 .header__up {
   width: 100%;
   background: #fafafa;
@@ -24,7 +30,12 @@
   }
 
   & a {
+    font-size: 14px;
     color: $second;
+
+    &:hover {
+      color: $accent;
+    }
   }
 }
 
@@ -39,10 +50,12 @@
 
 .header__call-phone-label {
   display: inline-block;
+  font-size: 14px;
   margin: 0 8px 0 0;
 }
 
 .header__call-phone-link {
+  font-size: 14px;
   font-weight: 500;
   color: $main;
 }
@@ -63,9 +76,10 @@
 }
 
 .header__logo {
+  min-width: 264px;
+  width: 40%;
   display: flex;
   align-items: center;
-  margin: 0 12px 0 0;
 
   &-text {
     display: inline-block;
@@ -76,11 +90,14 @@
 }
 
 .header__products {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-catalog-btn {
+  height: 46px;
   display: flex;
   align-items: center;
   margin: 0 17px 0 0;
@@ -93,8 +110,9 @@
 }
 
 .header__search {
-  width: 496px;
-  height: 46px;
+  max-width: 496px;
+  width: 100%;
+  height: 44px;
   // max-width: 496px;
   // width: 100%;
   border: 1px solid $outline;
@@ -126,6 +144,10 @@
     z-index: 1;
     pointer-events: none;
   }
+
+  @media screen and (max-width: $wwa2) {
+    display: none;
+  }
 }
 
 .header__search-icon {
@@ -139,8 +161,10 @@
 }
 
 .header__user {
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .header__account {

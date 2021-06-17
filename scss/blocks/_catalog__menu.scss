@@ -1,0 +1,43 @@
+.catalog__menu {
+  background: $bg;
+}
+
+.catalog__menu__body {
+  padding: 22px 0;
+}
+.catalog__menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__menu__link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+
+    .catalog__menu-icon {
+      transform: scale(1.1);
+    }
+
+    .catalog__menu-text {
+      // color: $accent;
+    }
+  }
+}
+
+.catalog__menu-icon {
+  width: 24px;
+  transition: $tr;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.catalog__menu-text {
+  color: $main;
+  margin: 0 0 0 8px;
+  // transition: $tr;
+}

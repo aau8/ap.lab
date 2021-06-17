@@ -12,10 +12,6 @@
   display: flex;
 }
 
-.footer__menu__list {
-  margin: 28px 0 0 0;
-}
-
 .footer__menu__column {
   padding: 0 50px;
 
@@ -40,8 +36,9 @@
 }
 
 .footer__menu__list {
-  max-width: 230px;
-  width: 100%;
+  // max-width: 230px;
+  // width: 100%;
+  margin: 28px 0 0 0;
   // grid-template-columns: repeat(2,1fr);
 }
 
@@ -98,10 +95,11 @@
 
 .footer__menu__list-about {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .footer__menu-item {
+  margin: 0 32px 0 0;
 
   &:not(:last-child) {
     margin: 0 16px 12px 0;
@@ -109,6 +107,10 @@
 
   & a {
     color: $main;
+
+    &:hover {
+      color: $accent;
+    }
   }
 }
 

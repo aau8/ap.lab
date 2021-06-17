@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header _shadow">
         <div class="header__up">
           <div class="container">
             <div class="header__up__body">
@@ -105,58 +105,116 @@
           </div>
         </div>
     </header>
-    <main class="main">
+    <div class="breadcrumbs">
       <div class="container">
-        <div class="main__body">
-          <div class="main__content">
-            <h1 class="main-title">Дополни свой рацион вкусными и полезными продуктами</h1>
-            <div class="main-text">Создаем неповторимый вкус и удовольствие от потребления здоровых продуктов питания.</div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <section class="advantages">
-      <div class="container">
-        <div class="advantages__body">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_delivery.svg" alt="Доставка"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Экспресс-доставка</h4>
-                <p class="advantages-text">Доставляем и оставляем товар прямо у вашей двери</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_like.svg" alt="Like"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Гарантия качества</h4>
-                <p class="advantages-text">Продукция проходят тщательную проверку</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages-icon"><img src="img/icon_wallet.svg" alt="Кошелек"></div>
-              <div class="advantages__content">
-                <h4 class="advantages-title">Оплата после доставки</h4>
-                <p class="advantages-text">Удобные способы оплаты: наличными, картой</p>
-              </div>
-            </li>
+        <div class="breadcrumbs__body">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+            <li class="breadcrumbs-item"><a href="#">Арахисовая паста Хрустящая</a></li>
           </ul>
         </div>
       </div>
+    </div>
+    <section class="product">
+      <div class="container">
+        <h1 class="product-title">Каталог товаров</h1>
+        <div class="product__body">
+          <div class="product__slider">
+            <div class="product-main-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/product-slide1.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-slide2.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-slide3.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-slide4.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/product-slide5.png" alt="продукт">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-second-slider">
+              <div class="swiper-button-prev product-second-slider-arrow"><img src="img/arrow.svg" alt="" style="transform:rotate(180deg)"></div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product-second-slide">
+                    <img src="img/product-slide1.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide product-second-slide">
+                    <img src="img/product-slide2.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide product-second-slide">
+                    <img src="img/product-slide3.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide product-second-slide">
+                    <img src="img/product-slide4.png" alt="продукт">
+                  </div>
+                  <div class="swiper-slide product-second-slide">
+                    <img src="img/product-slide5.png" alt="продукт">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next product-second-slider-arrow"><img src="img/arrow.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="product__content">
+            <span class="product-code">Код товара: 531468</span>
+            <h2 class="product-title">Арахисовая паста Хрустящая</h2>
+            <div class="product__add">
+              <div class="product__quantity">
+                <button class="product__quantity-change product__quantity-minus">
+                  <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                  </svg>                   
+                </button>
+                <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                <button class="product__quantity-change product__quantity-plus">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                    <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                  </svg>                 
+                </button>
+              </div>
+              <button class="btn product__add-btn">Добавить в корзину</button>
+            </div>
+            <div class="product__char">
+              <ul class="product__char__list">
+                <li class="product__char__item">
+                  <span class="product__char-title">Стоимость:</span>
+                  <span class="product__char-value product__char-value-price"><span>340</span> RUB</span>
+                </li>
+                <li class="product__char__item">
+                  <span class="product__char-title">Категория:</span>
+                  <span class="product__char-value">Ореховые пасты</span>
+                </li>
+                <li class="product__char__item">
+                  <span class="product__char-title">Масса (нетто):</span>
+                  <span class="product__char-value"><span>230</span> гр.</span>
+                </li>
+                <li class="product__char__item">
+                  <span class="product__char-title">Описание:</span>
+                  <span class="product__char-value">Пасту из арахиса употребляют как отдельно, так и в составе различных кондитерских блюд и выпечки. Самым популярным завтраком у многих является бутерброд с арахисовой пастой.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="popular">
+    <section class="popular popular-with-bg">
       <div class="container">
         <div class="popular__body">
           <div class="section__header">
             <h2 class="section__header-title">Популярные товары</h2>
-            <a href="#" class="section__header__all">
-              <span class="section__header__all-text">Смотреть весь каталог</span>
-              <span class="section__header__all-icon">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.5 1L8.5 6L3.5 11" stroke="#D2A158"/>
-                </svg>
-              </span>
-            </a>
           </div>
           <ul class="product-card__list popular__list">
             <li class="product-card popular-card">
@@ -216,128 +274,6 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-    <section class="category">
-      <div class="container">
-        <div class="category__body">
-          <div class="section__header">
-            <h2 class="section__header-title">Категории товаров</h2>
-          </div>
-          <ul class="category__list">
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img1.png" alt="картинка"></div>
-                <h5 class="category__item-title">Ореховые пасты</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img2.png" alt="картинка"></div>
-                <h5 class="category__item-title">Спортивное питание</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img3.png" alt="картинка"></div>
-                <h5 class="category__item-title">Сублиматы</h5>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__item-link">
-                <div class="category__item-img"><img src="img/category-img4.png" alt="картинка"></div>
-                <h5 class="category__item-title">Сахарозаменители</h5>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="mission">
-      <div class="container">
-        <div class="mission__body">
-          <div class="mission-text">Наша миссия — вносить вклад в развитие мирового рынка здоровых продуктов питания и поддерживать общемировой тренд здорового образа жизни.</div>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="section__header">
-          <h2 class="section__header-title">О компании</h2>
-          <a href="#" class="section__header__all">
-            <span class="section__header__all-text">Читать наш блог</span>
-            <span class="section__header__all-icon">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 1L8.5 6L3.5 11" stroke="#D2A158"/>
-              </svg>
-            </span>
-          </a>
-        </div>
-        <div class="about__part1">
-          <div class="about__body">
-            <div class="about-img"><img src="img/about-img.png" alt="исследования"></div>
-            <div class="about__content">
-              <h4 class="about-title">Наше производство это:</h4>
-              <ul class="about__list">
-                <li class="about-item">Качество</li>
-                <li class="about-item">Натуральность</li>
-                <li class="about-item">Открытость</li>  
-              </ul>
-              <div>
-                <p class="about-text">Ap.Lab – это новый бренд на рынке производства продуктов здорового питания, созданный в 2021 году, но уже успевший занять достойное место в сердцах своих покупателей.</p>
-                <p class="about-text">Мы – это команда профессионалов, которые любят создавать «ВКУС». Наша команда технологов разработала уникальную рецептуру для <a href="#">линейки нашей продукции</a>.</p>
-              </div>
-              <button class="btn-outline about-btn">Связаться с нами</button>
-            </div>
-          </div>
-        </div>
-        <div class="about__part2">
-          <div class="about__body">
-            <div class="about__content">
-              <div>
-                <p class="about-text">Наша первостепенная задача – качество создаваемого продукта. Для изготовления нашей продукции мы отбираем только лучшие ингредиенты.</p>
-                <p class="about-text">Компания Ap.Lab работает честно, мы открыты перед своими потребителями.</p>
-                <p class="about-text">Мы предлагаем своим покупателям натуральный, качественный, с пониженной калорийностью продукт, но при этом не менее вкусныйМы предлагаем своим покупателям натуральный, качественный, с пониженной калорийностью продукт, но при этом не менее вкусный.</p>
-              </div>
-              <div class="about__slogan">
-                <h5 class="about__slogan-title">Девиз нашей команды –</h5>
-                <div class="about__slogan-text">Люби то, что делаешь и ешь то, что любишь, а нашу продукцию невозможно не любить</div>
-              </div>
-            </div>
-            <div class="about__insta">
-              <div class="about__insta__body">
-                <div class="about__slide__header">
-                  <div class="about__slide-icon"><img src="img/insta-logo.png" alt="логотип"></div>
-                  <div class="about__insta__text">
-                    <span class="about__insta-account">ap.lab.company</span>
-                    <span class="about__insta-city">Moscow</span>
-                  </div>
-                </div>
-                <div class="swiper-container about__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/img_inst.png" alt="картинка"></div>
-                    </div>
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/product1.png" alt="картинка"></div>
-                    </div>
-                    <div class="swiper-slide about__slide">
-                      <div class="about__slide-img"><img src="img/product2.png" alt="картинка"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slider__arrows">
-                <div class="slider-arrow swiper-button-prev"><img src="img/arrow.svg" alt="" style="transform:rotate(180deg)"></div>
-                <div class="slider-arrow swiper-button-next"><img src="img/arrow.svg" alt=""></div>
-              </div>
-              <div class="about__insta__style__arrow">
-                <span class="about__insta__style__arrow-text">Наш<br>Instagram</span>
-                <div class="about__insta__style__arrow-icon"><img src="img/style-arrow.svg" alt=""></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

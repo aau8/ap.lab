@@ -1,0 +1,147 @@
+.product__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+
+// Слайдер
+.product__slider {
+  width: 50%;
+}
+
+.product-main-slider .swiper-container {
+  width: 552px;
+  height: 420px;
+  border-radius: 10px;
+}
+
+.product-second-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24px 0 0 0;
+}
+
+.product-second-slider .swiper-container {
+  width: 456px;
+  height: 110px;
+}
+
+.product-second-slide{
+  border-radius: 10px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-second-slide.swiper-slide-thumb-active {
+  opacity: .5;
+}
+
+.product-second-slider-arrow {
+  width: 36px!important;
+  height: 110px!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F6F3EF;
+  border-radius: 10px;
+  margin: 0!important;
+  position: initial!important;
+
+  & img {
+    width: 22px;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &::after {
+    font-size: 0!important;
+  }
+}
+
+// Контентная часть
+
+.product__content {
+  width: 50%;
+  margin: 0 0 0 40px;
+}
+
+.product-code {
+  font-size: 14px;
+}
+
+.product-title {
+  margin: 12px 0 0 0;
+}
+
+.product__add {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 0 0;
+}
+
+.product__quantity {
+  width: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $outline;
+  border-radius: 5px;
+  padding: 14px 16px;
+}
+.product__quantity-change {
+  width: 16px;
+  height: 16px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.product__quantity-minus {
+}
+.product__quantity-input {
+  width: 40%;
+  font-size: 16px;
+  text-align: center;
+}
+.product__quantity-plus {
+  
+}
+
+.product__add-btn {
+  margin: 0 0 0 12px;
+}
+
+.product__char {
+  margin: 32px 0 0 0;
+}
+
+.product__char__item {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+}
+
+.product__char-title {
+  width: 30%;
+  color: $second;
+  padding: 0 4px 0 0;
+}
+
+.product__char-value {
+  width: 70%;
+  color: $main;
+}
+
+.product__char-value-price {
+  font-size: 28px;
+  font-weight: 500;
+  margin: -10px 0 0 0;
+}

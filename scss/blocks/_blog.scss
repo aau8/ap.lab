@@ -1,0 +1,109 @@
+.blog__body {
+  margin: 40px 0 0 0;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 24px;
+  row-gap: 32px;
+}
+
+.blog__card {
+
+}
+
+.blog__card-img {
+  width: 100%;
+  height: 224px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog__card-date {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0 0 0;
+}
+
+.blog__card-descr {
+  font-weight: 500;
+  margin: 8px 0 0 0;
+}
+
+// Пагинация
+.blog__pagin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 76px 0 0 0;
+}
+.blog__pagin__arrows {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 24px;
+}
+.blog__pagin-arrow {
+  width: 20px;
+  height: 20px;
+
+  &._disabled {
+    opacity: .2;
+    pointer-events: none;
+  }
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.blog__pagin-arrow-more-step {
+  margin: 0 0 0 8px;
+}
+._disabled {
+}
+.blog__pagin-arrow-step {
+}
+.blog__pagin__list {
+  display: flex;
+  align-items: center;
+}
+.blog__pagin-item {
+  width: 40px;
+  height: 40px;
+  background: $bg;
+  border: 1px solid $outline;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+
+  &._active {
+    background: $accent;
+    border: 1px solid $accent;
+
+    & a {
+      color: #fff;
+    }
+  }
+
+  & a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $main;
+  }
+}
+._active {
+}

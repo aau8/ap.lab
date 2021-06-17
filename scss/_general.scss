@@ -25,12 +25,16 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 24px;
+  row-gap: 24px;
   justify-items: center;
+
+  @media screen and (max-width: $wwa) {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
 }
 
 .product-card {
-  max-width: 264px;
-  width: 100%;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
