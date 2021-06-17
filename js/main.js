@@ -1,38 +1,46 @@
-const swiperInsta = new Swiper('.about__slider', {
-  loop: true,
-  effect: 'fade',
+if (document.querySelector('.about__slider')) {
+  const swiperInsta = new Swiper('.about__slider', {
+    loop: true,
+    effect: 'fade',
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+}
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+if (document.querySelector('.product-second-slider')) {
+  const swiperSecondProduct = new Swiper('.product-second-slider .swiper-container', {
+    spaceBetween: 12,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    slideToClickedSlide: true,
 
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      320: {
+        slidesPerView: 2,
+      }
+    }
+  });
 
-const swiperSecondProduct = new Swiper('.product-second-slider .swiper-container', {
-  // loop: true,
-  slidesPerView: 3,
-  spaceBetween: 12,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  slideToClickedSlide: true,
-
-});
-
-const swiperMainProduct = new Swiper('.product-main-slider .swiper-container', {
-  loop: true,
-  effect: 'fade',
-
-  navigation: {
-    nextEl: '.product-second-slider .swiper-button-next',
-    prevEl: '.product-second-slider .swiper-button-prev',
-  },
-
-  thumbs: {
-    swiper: swiperSecondProduct,
-  },
-});
+  const swiperMainProduct = new Swiper('.product-main-slider .swiper-container', {
+    loop: true,
+    effect: 'fade',
+  
+    navigation: {
+      nextEl: '.product-second-slider .swiper-button-next',
+      prevEl: '.product-second-slider .swiper-button-prev',
+    },
+  
+    thumbs: {
+      swiper: swiperSecondProduct,
+    },
+  });
+}
 
 // Открытие меню
 const burger = document.querySelector('.header__menu__burger'),

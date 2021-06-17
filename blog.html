@@ -15,17 +15,33 @@
           <div class="container">
             <div class="header__up__body">
               <nav class="header__menu">
-                <div class="header__menu__burger">
+                <button class="header__menu__burger">
                   <span class="header__menu__burger-text">Меню</span>
-                  <span class="header__menu__burger-icon">Меню</span>
+                  <span class="header__menu__burger-icon">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
+                      <path d="M2 1L6 5L2 9" stroke="#555555" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="header__menu__block">
+                  <div class="header__search header__menu__block__search">
+                    <button class="header__search-icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="5.5" stroke="#555555"/>
+                        <path d="M0.646447 14.6464C0.451184 14.8417 0.451184 15.1583 0.646447 15.3536C0.841709 15.5488 1.15829 15.5488 1.35355 15.3536L0.646447 14.6464ZM1.35355 15.3536L6.35355 10.3536L5.64645 9.64645L0.646447 14.6464L1.35355 15.3536Z" fill="#555555"/>
+                      </svg>                      
+                    </button>
+                    <input name="search" type="text" required>
+                    <label for="search">Поиск по сайту...</label>
+                  </div>
+                  <ul class="header__menu__list">
+                    <li class="header__menu-item"><a href="#">Доставка</a></li>
+                    <li class="header__menu-item"><a href="#">Оплата</a></li>
+                    <li class="header__menu-item"><a href="#">О компании</a></li>
+                    <li class="header__menu-item"><a href="#">Наш блог</a></li>
+                    <li class="header__menu-item"><a href="#">Контакты</a></li>
+                  </ul>
                 </div>
-                <ul class="header__menu__list">
-                  <li class="header__menu-item"><a href="#">Доставка</a></li>
-                  <li class="header__menu-item"><a href="#">Оплата</a></li>
-                  <li class="header__menu-item"><a href="#">О компании</a></li>
-                  <li class="header__menu-item"><a href="#">Наш блог</a></li>
-                  <li class="header__menu-item"><a href="#">Контакты</a></li>
-                </ul>
               </nav>
               <div class="header__call">
                 <div class="header__call-phone">
@@ -41,11 +57,11 @@
           <div class="container">
             <div class="header__down__body">
               <div class="header__logo">
-                <div class="header__logo-img"><img src="img/logo.svg" alt="логотип"></div>
+                <a href="#" class="header__logo-img"><img src="img/logo.svg" alt="логотип"></a>
                 <span class="header__logo-text">Интернет-магазин полезного питания</span>
               </div>
               <div class="header__products">
-                <button class="btn header-catalog-btn">
+                <a href="catalog.html" class="btn header-catalog-btn">
                   <div class="header-catalog-btn-icon">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect y="1" width="16" height="2" rx="1" fill="white"/>
@@ -54,7 +70,7 @@
                     </svg>
                   </div>
                   <span class="header-catalog-btn-text">Каталог</span>
-                </button>
+                </a>
                 <div class="header__search">
                   <button class="header__search-icon">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +248,7 @@
       <div class="container">
         <div class="footer__body">
           <div class="footer__menu">
-            <div class="footer__menu__column">
+            <div class="footer__menu__column footer__menu__column-category">
               <h4 class="footer__menu-title">Категории товаров</h4>
               <ul class="footer__menu__list">
                 <li class="footer__menu-item"><a href="#">Ореховые пасты</a></li>
@@ -240,7 +256,7 @@
                 <li class="footer__menu-item"><a href="#">Сублиматы</a></li>
               </ul>
             </div>
-            <div class="footer__menu__column">
+            <div class="footer__menu__column footer__menu__column-about">
               <h4 class="footer__menu-title">О нас</h4>
               <ul class="footer__menu__list footer__menu__list-about">
                 <li class="footer__menu-item"><a href="#">Доставка</a></li>
