@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статья</title>
+  <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/ico"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header _shadow">
+        <div class="header__up">
+          <div class="container">
+            <div class="header__up__body">
+              <nav class="header__menu">
+                <button class="header__menu__burger">
+                  <span class="header__menu__burger-text">Меню</span>
+                  <span class="header__menu__burger-icon">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(90deg);">
+                      <path d="M2 1L6 5L2 9" stroke="#555555" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="header__menu__block">
+                  <div class="header__search header__menu__block__search">
+                    <button class="header__search-icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="6" r="5.5" stroke="#555555"/>
+                        <path d="M0.646447 14.6464C0.451184 14.8417 0.451184 15.1583 0.646447 15.3536C0.841709 15.5488 1.15829 15.5488 1.35355 15.3536L0.646447 14.6464ZM1.35355 15.3536L6.35355 10.3536L5.64645 9.64645L0.646447 14.6464L1.35355 15.3536Z" fill="#555555"/>
+                      </svg>                      
+                    </button>
+                    <input name="search" type="text" required>
+                    <label for="search">Поиск по сайту...</label>
+                  </div>
+                  <ul class="header__menu__list">
+                    <li class="header__menu-item"><a href="./delivery.html">Доставка</a></li>
+                    <li class="header__menu-item"><a href="./payment.html">Оплата</a></li>
+                    <li class="header__menu-item"><a href="./about.html">О компании</a></li>
+                    <li class="header__menu-item"><a href="./blog.html">Наш блог</a></li>
+                    <li class="header__menu-item"><a href="./contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="header__call">
+                <div class="header__call-phone">
+                  <span class="header__call-phone-label">МТС, A1:</span>
+                  <a href="tel:+79117425353" class="header__call-phone-link">742-53-53</a>
+                </div>
+                <button class="header__call-callback">Обратный звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__down">
+          <div class="container">
+            <div class="header__down__body">
+              <div class="header__logo">
+                <a href="../" class="header__logo-img"><img src="img/logo.svg" alt="логотип"></a>
+                <span class="header__logo-text">Интернет-магазин полезного питания</span>
+              </div>
+              <div class="header__products">
+                <a href="catalog.html" class="btn header-catalog-btn">
+                  <div class="header-catalog-btn-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="1" width="16" height="2" rx="1" fill="white"/>
+                      <rect y="7" width="16" height="2" rx="1" fill="white"/>
+                      <rect y="13" width="16" height="2" rx="1" fill="white"/>
+                    </svg>
+                  </div>
+                  <span class="header-catalog-btn-text">Каталог</span>
+                </a>
+                <div class="header__search">
+                  <button class="header__search-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10" cy="6" r="5.5" stroke="#555555"/>
+                      <path d="M0.646447 14.6464C0.451184 14.8417 0.451184 15.1583 0.646447 15.3536C0.841709 15.5488 1.15829 15.5488 1.35355 15.3536L0.646447 14.6464ZM1.35355 15.3536L6.35355 10.3536L5.64645 9.64645L0.646447 14.6464L1.35355 15.3536Z" fill="#555555"/>
+                    </svg>                      
+                  </button>
+                  <input name="search" type="text" required>
+                  <label for="search">Поиск по сайту...</label>
+                </div>
+              </div>
+              <div class="header__user">
+                <button class="header__account">
+                  <div class="header__account-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M7.09369 27.2939L5.44092 26.5593C5.90002 25.4574 7.36915 24.8147 8.9301 24.0801C10.4911 23.3456 12.4193 22.5192 12.4193 21.5092V20.1318C11.8684 19.6727 10.9502 18.6627 10.7665 17.1936C10.3074 16.7345 9.57285 15.9081 9.57285 14.8062C9.57285 14.1635 9.84831 13.6126 10.032 13.2453C9.84831 12.5107 9.66467 11.1334 9.66467 10.0316C9.66467 6.45057 12.1438 4.06323 16.0921 4.06323C17.194 4.06323 18.5713 4.33869 19.3058 5.16508C21.0504 5.53236 22.5196 7.55242 22.5196 10.0316C22.5196 11.5925 22.2441 12.878 22.0605 13.5208C22.2441 13.7962 22.4277 14.2553 22.4277 14.8062C22.4277 15.9999 21.785 16.8263 21.2341 17.1936C21.0504 18.6627 20.224 19.5809 19.6731 20.04V21.5092C19.6731 22.3355 21.3259 22.9783 22.795 23.5292C24.5396 24.172 26.376 24.9065 27.0188 26.3756L25.2742 27.0184C24.9987 26.2838 23.5296 25.7329 22.1523 25.2738C20.1322 24.5392 17.8367 23.7129 17.8367 21.601V19.2136L18.2958 18.9382C18.2958 18.9382 19.3977 18.2036 19.3977 16.7345V16.0917L19.9486 15.8163C20.0404 15.8163 20.4995 15.5408 20.4995 14.8062C20.4995 14.6226 20.3159 14.3471 20.224 14.2553L19.8568 13.888L20.0404 13.4289C20.0404 13.4289 20.4995 11.9598 20.4995 10.1234C20.4995 8.3788 19.4895 7.09331 18.6631 7.09331H18.1122L17.8367 6.63421C17.8367 6.26693 17.194 5.89965 16.0921 5.89965C13.2457 5.89965 11.5011 7.4606 11.5011 10.0316C11.5011 11.2252 11.9602 13.2453 11.9602 13.2453L12.052 13.7044L11.6847 14.1635C11.5929 14.1635 11.4093 14.439 11.4093 14.8062C11.4093 15.2654 11.9602 15.8163 12.2356 15.9999L12.6029 16.2754V16.7345C12.6029 18.1118 13.7966 18.8464 13.7966 18.9382L14.2557 19.2136V21.601C14.2557 23.8047 11.8684 24.9065 9.66467 25.8247C8.65464 26.192 7.27733 26.8348 7.09369 27.2939Z" fill="#555555" stroke="white" stroke-width="0.7"/>
+                      <path d="M16.0919 31.6094C7.46079 31.6094 0.482422 24.631 0.482422 15.9999C0.482422 7.36875 7.46079 0.390381 16.0919 0.390381C24.7231 0.390381 31.7015 7.36875 31.7015 15.9999C31.7015 24.631 24.6313 31.6094 16.0919 31.6094ZM16.0919 2.22679C8.47082 2.22679 2.31884 8.37878 2.31884 15.9999C2.31884 23.621 8.47082 29.773 16.0919 29.773C23.7131 29.773 29.865 23.621 29.865 15.9999C29.865 8.37878 23.6212 2.22679 16.0919 2.22679Z" fill="#555555" stroke="white" stroke-width="0.7"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="32" height="32" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </button>
+                <button class="header__cart">
+                  <div class="header__cart-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0)">
+                      <path d="M0.313275 1.43104C0.313275 1.13399 0.431275 0.849116 0.641316 0.639075C0.851356 0.429035 1.13623 0.311035 1.43327 0.311035H2.41439C4.04287 0.311035 4.97919 1.37056 5.52127 2.42783C5.89087 3.15136 6.15743 4.03392 6.37919 4.79999H29.44C29.7861 4.8001 30.1275 4.88041 30.4374 5.03462C30.7472 5.18883 31.0171 5.41276 31.2259 5.68881C31.4347 5.96487 31.5767 6.28556 31.6407 6.62571C31.7047 6.96585 31.689 7.31621 31.5949 7.64927L28.2438 19.4653C27.9773 20.4027 27.4123 21.2277 26.6345 21.8151C25.8568 22.4024 24.9087 22.7201 23.9341 22.72H12.5571C11.5744 22.7203 10.6188 22.3975 9.83757 21.8013C9.05636 21.2051 8.49287 20.3685 8.23391 19.4205L6.79583 14.1453C6.78759 14.1216 6.78012 14.0977 6.77343 14.0736L4.46399 6.24032L4.23999 5.48544C4.01599 4.7104 3.81887 4.02495 3.52319 3.44927C3.16703 2.75487 2.83999 2.55328 2.41215 2.55328H1.43104C1.13399 2.55328 0.849116 2.43528 0.639075 2.22523C0.429034 2.01519 0.311035 1.73032 0.311035 1.43327L0.313275 1.43104ZM8.93279 13.4688L10.3955 18.8358C10.5252 19.3096 10.807 19.7277 11.1976 20.0256C11.5882 20.3235 12.0659 20.4847 12.5571 20.4845H23.9363C24.4234 20.484 24.897 20.3247 25.2855 20.0309C25.6739 19.737 25.956 19.3246 26.089 18.856L29.44 7.04H7.03999L8.93279 13.4666V13.4688Z" fill="#555555" stroke="white"/>
+                      <path d="M15.9998 28.32C15.9998 29.2111 15.6458 30.0657 15.0157 30.6958C14.3855 31.326 13.5309 31.68 12.6398 31.68C11.7487 31.68 10.894 31.326 10.2639 30.6958C9.63378 30.0657 9.27979 29.2111 9.27979 28.32C9.27979 27.4288 9.63378 26.5742 10.2639 25.9441C10.894 25.314 11.7487 24.96 12.6398 24.96C13.5309 24.96 14.3855 25.314 15.0157 25.9441C15.6458 26.5742 15.9998 27.4288 15.9998 28.32ZM13.7598 28.32C13.7598 28.0229 13.6418 27.738 13.4317 27.528C13.2217 27.318 12.9368 27.2 12.6398 27.2C12.3427 27.2 12.0579 27.318 11.8478 27.528C11.6378 27.738 11.5198 28.0229 11.5198 28.32C11.5198 28.617 11.6378 28.9019 11.8478 29.1119C12.0579 29.322 12.3427 29.44 12.6398 29.44C12.9368 29.44 13.2217 29.322 13.4317 29.1119C13.6418 28.9019 13.7598 28.617 13.7598 28.32Z" fill="#555555" stroke="white"/>
+                      <path d="M27.2 28.32C27.2 29.2111 26.846 30.0657 26.2159 30.6958C25.5857 31.326 24.7311 31.68 23.84 31.68C22.9489 31.68 22.0942 31.326 21.4641 30.6958C20.834 30.0657 20.48 29.2111 20.48 28.32C20.48 27.4288 20.834 26.5742 21.4641 25.9441C22.0942 25.314 22.9489 24.96 23.84 24.96C24.7311 24.96 25.5857 25.314 26.2159 25.9441C26.846 26.5742 27.2 27.4288 27.2 28.32ZM24.96 28.32C24.96 28.0229 24.842 27.738 24.6319 27.528C24.4219 27.318 24.137 27.2 23.84 27.2C23.5429 27.2 23.2581 27.318 23.048 27.528C22.838 27.738 22.72 28.0229 22.72 28.32C22.72 28.617 22.838 28.9019 23.048 29.1119C23.2581 29.322 23.5429 29.44 23.84 29.44C24.137 29.44 24.4219 29.322 24.6319 29.1119C24.842 28.9019 24.96 28.617 24.96 28.32Z" fill="#555555" stroke="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0">
+                      <rect width="32" height="32" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="header__cart-quantity">1</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__body">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="#">Наш блог</a></li>
+            <li class="breadcrumbs-item"><a href="#">Статья</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="post">
+      <div class="container">
+        <div class="post__body">
+          <div class="post__content text">
+            <span class="post-date">21 Мая, 2021</span>
+            <h3 class="post-title">10 видов полезных сладостей для тех, кто не может без вкусного десерта</h3>
+            <div class="post-img post-main-img-mobile"><img src="img/post/post-img1.png" alt="картинка"></div>
+            <p class="post-text">Любите сладости, но не всегда можете подобрать одновременно и вкусные, и полезные? С нами это проще простого. Поэтому внимательно следите за тем, что у нас появляется на сайте. Мы уже собрали много вкусных и полезных вариантов сладостей. Можете выбирать сладости, которые уже пробовали много раз, а можете заказать что-то новенькое. </p>
+            <h5>Почему сладости из магазина вредные?</h5>
+            <p>Потому что это быстрые углеводы с большим количеством сахара. Смотрите, сколько сахара в некоторых перекусах и напитках:</p>
+            <ul>
+              <li>В одном злаковом или протеиновом батончике из массмаркета может быть до 29 г сахара. И если сравнивать его с шоколадными батончиками, то разница невелика.</li>
+              <li>В питьевых низкокалорийных йогуртах и творожках 6-7,5 чайных ложек сахара. Это 45 грамм – приличная порция, если учесть, что в течение дня вы будете есть и другие продукты, содержащие сахар.</li>
+              <li>В мерной ложке мороженого 3 чайные ложки сахара. В шоколадном кексе – 4,75 ложки, в булочке 100 г – тоже четыре ложки, а в порции бисквитного торта – 5,5 ложек.</li>
+            </ul>
+            <div class="post__images">
+              <div class="post-img"><img src="img/post/post-img1.png" alt="картинка"></div>
+              <div class="post-img"><img src="img/post/post-img2.png" alt="картинка"></div>
+            </div>
+            <h5>Есть ли альтернатива?</h5>
+            <p>Да, это полезные сладости из нашего магазина. Смотрите, как много вкусного и полезного мы собрали для сладкоежек: </p>
+            <ul>
+              <li>Батончики. У нас есть натуральные батончики, в которых нет сахара. Вместо него – сушеные ягоды, фрукты и орехи. Они утоляют голод и насыщают организм энергией</li>
+              <li>Органический шоколад. Он подходит диабетикам, беременным и детям, а также всем тем, кто заботится о фигуре и здоровье. Шоколад сам по себе сладкий! В нем нет консервантов, подсластителей и ароматизаторов.</li>
+              <li>Полезное печенье без пшеничной муки. Вкусное печенье для детей и взрослых без сахара с чистыми и понятными составами.</li>
+              <li>Конфеты. Отказаться от привычных конфет из магазина не просто. Но попробовать стоит! У нас есть варианты конфет из орехов и сухофруктов, которые точь-в-точь как настоящие трюфели и даже вкуснее!</li>
+              <li>Натуральная пастила и мармелад. В пастиле и мармеладе нет сахара и добавок, они безопасны даже для самых маленьких и очень вкусные.</li>
+              <li>Сладкие хлебцы. Думаете, что хлебцы не десерт? Попробуйте сладкие хлебцы – это не только сладкое лакомство, но и польза клетчатки.</li>
+              <li>Полезные лакомства. Если вам хочется чего-то особенного, то попробуйте такие полезные сладкие продукты, как попкорн, хрустящие паффы, фруктовые слайсы и кофейные зерна в шоколаде.</li>
+              <li>Пасты и урбечи. Нравится Нутэлла и другие шоколадные пасты? Тогда попробуйте здоровый аналог – ароматные дагестанские урбечи из перемолотых орехов, семян и меда, либо урбечи и ореховые пасты. Многие пасты и урбечи содержат естественную сладость, благодаря кокосу и кешью в составе.</li>
+              <li>Пекмезы и сиропы. Используйте их при приготовлении низкокалорийных десертов и выпечки, или добавляйте в чай и кофе.</li>
+            </ul>
+            <div class="post__images">
+              <div class="post-img"><img src="img/post/post-img2.png" alt="картинка"></div>
+              <div class="post-img"><img src="img/post/post-img1.png" alt="картинка"></div>
+            </div>
+            <p>Как вы понимаете, исключить из своего меню вредные сладости сегодня очень просто! Достаточно попробовать – и вам точно понравится :)</p>
+          </div>
+          <div class="post-img post-main-img-decktop"><img src="img/post/post-img1.png" alt="картинка"></div>
+        </div>
+        <a href="#" class="post-back">
+          <span class="post-back-icon"><img src="img/long-arrow.svg" alt="стрелка"></span>
+          <span class="post-back-text">Назад к статьям</span>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__menu">
+            <div class="footer__menu__column footer__menu__column-category">
+              <h5 class="footer__menu-title">Категории товаров</h5>
+              <ul class="footer__menu__list">
+                <li class="footer__menu-item"><a href="./catalog.html#nut_pastes">Ореховые пасты</a></li>
+                <li class="footer__menu-item"><a href="./catalog.html#sports_nutrition">Спортивное питание</a></li>
+                <li class="footer__menu-item"><a href="./catalog.html#sublimates">Сублиматы</a></li>
+                <li class="footer__menu-item"><a href="./catalog.html#sweeteners">Сахарозаменители</a></li>
+              </ul>
+            </div>
+            <div class="footer__menu__column footer__menu__column-about">
+              <h5 class="footer__menu-title">О нас</h5>
+              <ul class="footer__menu__list footer__menu__list-about">
+                <li class="footer__menu-item"><a href="./delivery.html">Доставка</a></li>
+                <li class="footer__menu-item"><a href="./contacts.html">Контакты</a></li>
+                <li class="footer__menu-item"><a href="./payment.html">Оплата</a></li>
+                <li class="footer__menu-item"><a href="./blog.html">Наш блог</a></li>
+                <li class="footer__menu-item"><a href="./about.html">О компании</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__logo">
+              <a href="../" class="footer__logo-title">Ap.Lab</a>
+              <span class="footer__logo-text">Интернет-магазин полезного питания</span>
+            </div>
+            <ul class="footer__contacts__list">
+              <li class="footer__contacts__item">
+                <div class="footer__contacts-icon"><img src="img/call.svg" alt=""></div>
+                <div class="footer__contacts-text">
+                  <span class="footer__contacts-text-label">МТС, A1:</span>
+                  <a href="tel:+79117425353" class="footer__contacts-text-link">742-53-53</a>
+                </div>
+              </li>
+              <li class="footer__contacts__item">
+                <div class="footer__contacts-icon"><img src="img/envelope.svg" alt=""></div>
+                <div class="footer__contacts-text">
+                  <a href="mailto:info@ablab.ru" class="footer__contacts-text-link">info@ablab.ru</a>
+                </div>
+              </li>
+              <li class="footer__contacts__item">
+                <div class="footer__contacts-icon"><img src="img/suitcase-2.svg" alt=""></div>
+                <div class="footer__contacts-text">
+                  <span class="footer__contacts-text-label">ООО «АП ЛАБ», УНП: 591031847</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__down">
+      <div class="container">
+        <div class="footer__down__body">
+          <span class="footer-copyright"><span>2021</span> © Все права защищены</span>
+          <a href="#" class="footer-policy">Политика конфиденциальности</a>
+          <a href="#" class="footer-dev">Разработано в веб-студии Atekla</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

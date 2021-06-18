@@ -40,15 +40,19 @@
   width: 100%;
 }
 
-.payment__types__list {
+.payment__types__list { 
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   margin: 22px 0 46px 0;
 }
 
 .payment__types-item {
-  margin: 0 20px 20px 0;
+  margin: 0 20px 0 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .payment-strong {
