@@ -48,7 +48,7 @@
                   <span class="header__call-phone-label">МТС, A1:</span>
                   <a href="tel:+79117425353" class="header__call-phone-link">742-53-53</a>
                 </div>
-                <button class="header__call-callback">Обратный звонок</button>
+                <button class="header__call-callback" data-modal-open="callback">Обратный звонок</button>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
           <div class="container">
             <div class="header__down__body">
               <div class="header__logo">
-                <a href="../" class="header__logo-img"><img src="img/logo.svg" alt="логотип"></a>
+                <a href="/" class="header__logo-img"><img src="img/logo.svg" alt="логотип"></a>
                 <span class="header__logo-text">Интернет-магазин полезного питания</span>
               </div>
               <div class="header__products">
@@ -83,7 +83,7 @@
                 </div>
               </div>
               <div class="header__user">
-                <button class="header__account">
+                <button class="header__account" data-modal-open="authoriz">
                   <div class="header__account-icon">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0)">
@@ -98,7 +98,7 @@
                     </svg>
                   </div>
                 </button>
-                <button class="header__cart">
+                <button class="header__cart" data-modal-open="cart">
                   <div class="header__cart-icon">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0)">
@@ -113,7 +113,7 @@
                       </defs>
                     </svg>
                   </div>
-                  <div class="header__cart-quantity">1</div>
+                  <div class="header__cart-quantity">3</div>
                 </button>
               </div>
             </div>
@@ -521,6 +521,374 @@
           <span class="footer-copyright"><span>2021</span> © Все права защищены</span>
           <a href="#" class="footer-policy">Политика конфиденциальности</a>
           <a href="#" class="footer-dev">Разработано в веб-студии Atekla</a>
+        </div>
+      </div>
+    </div>
+    <div class="modals">
+      <div class="modals-bg"></div>
+      <div class="modal authoriz" data-modal="authoriz">
+        <div class="modal__body authoriz__modal">
+          <div class="authoriz__block">
+            <div class="authoriz__header">
+              <button class="authoriz__tab" data-tab="sign-up">Регистрация</button>
+              <button class="authoriz__tab _active" data-tab="sign-in">Вход</button>
+            </div>
+            <div class="authoriz__body" data-tab-body="sign-up">
+              <div class="authoriz__social">
+                <span class="authoriz__social-title">Через соц сети:</span>
+                <ul class="authoriz__social__list">
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#D8BE9D"/>
+                        <path d="M25.0278 20.783H21.459V33.8573H16.052V20.783H13.4805V16.1882H16.052V13.2148C16.052 11.0886 17.0621 7.75903 21.5071 7.75903L25.5123 7.77579V12.2358H22.6063C22.1296 12.2358 21.4594 12.474 21.4594 13.4883V16.1925H25.5001L25.0278 20.783Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40ZM27.1383 18.5717H30.0017V15.71H32.865V18.5733H35.7033V21.4367H32.865V24.3H30.0017V21.4367H27.1383V18.5717ZM20.9933 12.6033L18.2833 15.2333C14.8167 11.845 8.07167 14.3133 8.07167 19.9917C8.07167 27.6933 19.0033 28.22 19.9517 21.9917H14.2983V18.5567H23.7267C24.7967 24.15 21.185 30 14.2983 30V30.0017C8.75 30.0017 4.29667 25.525 4.29667 20C4.29833 11.1033 14.8517 6.89833 20.9933 12.6033Z" fill="#D8BE9D"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#D8BE9D"/>
+                        <path d="M19.9999 21.1353C24.1223 21.1353 27.4642 17.7935 27.4642 13.671C27.4642 9.5486 24.1223 6.20679 19.9999 6.20679C15.8775 6.20679 12.5356 9.54865 12.5356 13.6711C12.5407 17.7914 15.8796 21.1303 19.9999 21.1353ZM19.9999 9.65184C22.2196 9.65184 24.0191 11.4513 24.0191 13.6711C24.0191 15.8909 22.2197 17.6903 19.9999 17.6903C17.7801 17.6903 15.9806 15.8909 15.9806 13.6711C15.9806 11.4513 17.7801 9.65184 19.9999 9.65184Z" fill="white"/>
+                        <path d="M27.3115 24.6722C28.1227 24.1379 28.6115 23.232 28.6126 22.2606C28.6239 21.4545 28.169 20.7142 27.4448 20.3601C26.7006 19.9884 25.8099 20.0721 25.148 20.576C22.0807 22.8122 17.9204 22.8122 14.8531 20.576C14.1902 20.0748 13.301 19.9912 12.5564 20.3601C11.8324 20.7142 11.3773 21.4536 11.3874 22.2595C11.3891 23.2306 11.8777 24.1363 12.6885 24.671C13.7287 25.3628 14.8614 25.904 16.0532 26.2787C16.2553 26.3415 16.4639 26.3997 16.679 26.4533L13.2087 29.8467C12.2984 30.7299 12.2764 32.1839 13.1596 33.0943C14.0429 34.0047 15.4969 34.0267 16.4073 33.1434C16.4262 33.125 16.4449 33.1063 16.4632 33.0873L20.0001 29.4263L23.5439 33.0942C24.4265 34.0052 25.8805 34.0284 26.7915 33.1458C27.7026 32.2633 27.7257 30.8093 26.8432 29.8982C26.8248 29.8792 26.806 29.8604 26.7869 29.842L23.3223 26.4521C23.5374 26.397 23.7468 26.3384 23.9504 26.2764C25.1408 25.9031 26.2725 25.363 27.3115 24.6722Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#D8BE9D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2447 28.7719H20.8145C20.8145 28.7719 21.2887 28.7198 21.5307 28.4588C21.7536 28.2193 21.7464 27.7693 21.7464 27.7693C21.7464 27.7693 21.7158 25.663 22.6934 25.3529C23.657 25.0473 24.8945 27.3886 26.2061 28.2888C27.198 28.9701 27.9517 28.8207 27.9517 28.8207L31.4587 28.7719C31.4587 28.7719 33.2934 28.6589 32.4235 27.2164C32.3522 27.0984 31.9169 26.1493 29.8159 24.1992C27.6169 22.1581 27.9114 22.4882 30.5603 18.9576C32.1736 16.8075 32.8185 15.4947 32.6171 14.9325C32.4249 14.397 31.2384 14.5386 31.2384 14.5386L27.2896 14.5632C27.2896 14.5632 26.9969 14.5232 26.7798 14.653C26.5676 14.7803 26.4311 15.0769 26.4311 15.0769C26.4311 15.0769 25.8061 16.7408 24.9726 18.1558C23.2142 21.1417 22.5112 21.2992 22.2238 21.1138C21.5553 20.6817 21.7222 19.378 21.7222 18.4517C21.7222 15.5582 22.1611 14.3517 20.8676 14.0394C20.4384 13.9357 20.1225 13.8672 19.0248 13.8562C17.6158 13.8416 16.4233 13.8605 15.748 14.1913C15.2988 14.4113 14.9523 14.9015 15.1633 14.9297C15.4243 14.9646 16.0154 15.089 16.3288 15.5158C16.7334 16.0662 16.7192 17.3027 16.7192 17.3027C16.7192 17.3027 16.9516 20.7088 16.1762 21.132C15.6439 21.4222 14.9138 20.8297 13.3461 18.1209C12.5429 16.7333 11.9365 15.1996 11.9365 15.1996C11.9365 15.1996 11.8195 14.9129 11.611 14.7596C11.3578 14.5739 11.0042 14.5147 11.0042 14.5147L7.25181 14.5393C7.25181 14.5393 6.68851 14.555 6.48173 14.7999C6.29776 15.0177 6.46711 15.4684 6.46711 15.4684C6.46711 15.4684 9.40483 22.3413 12.7311 25.8049C15.7812 28.9804 19.2447 28.7719 19.2447 28.7719Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#D8BE9D"/>
+                        <path d="M24.8535 7H21.2306C17.5602 7 13.8565 9.86991 13.8565 16.2816C13.8565 19.6027 15.1858 22.1892 17.6226 23.6603L13.1626 32.208C12.9512 32.6123 12.9456 33.0705 13.1478 33.4336C13.3451 33.7882 13.7061 34 14.1129 34H16.369C16.8815 34 17.2811 33.7377 17.4728 33.2782L21.6545 24.6175H21.9597V32.9206C21.9597 33.5057 22.426 34 22.978 34H24.9489C25.5679 34 26 33.5424 26 32.8871V8.18141C26.0001 7.48584 25.5287 7 24.8535 7ZM21.9597 20.7703H21.4213C19.3338 20.7703 18.0876 18.9661 18.0876 15.9439C18.0876 12.1861 19.6619 10.8472 21.1352 10.8472H21.9597V20.7703Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="authoriz__form">
+                <form action="#" method="POST">
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-email">Адрес электронной почты:</label>
+                    </div>
+                    <input name="authoriz__input-email" type="email">
+                  </div>
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-password">Придумайте пароль:</label>
+                      <span>*Более 5 символов</span>
+                    </div>
+                    <input name="authoriz__input-password" type="password">
+                  </div>
+                  <button type="submit" class="btn authoriz-btn">Войти</button>
+                </form>
+              </div>
+            </div>
+            <div class="authoriz__body _show" data-tab-body="sign-in">
+              <div class="authoriz__social">
+                <span class="authoriz__social-title">Через соц сети:</span>
+                <ul class="authoriz__social__list">
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#D8BE9D"/>
+                        <path d="M25.0278 20.783H21.459V33.8573H16.052V20.783H13.4805V16.1882H16.052V13.2148C16.052 11.0886 17.0621 7.75903 21.5071 7.75903L25.5123 7.77579V12.2358H22.6063C22.1296 12.2358 21.4594 12.474 21.4594 13.4883V16.1925H25.5001L25.0278 20.783Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40ZM27.1383 18.5717H30.0017V15.71H32.865V18.5733H35.7033V21.4367H32.865V24.3H30.0017V21.4367H27.1383V18.5717ZM20.9933 12.6033L18.2833 15.2333C14.8167 11.845 8.07167 14.3133 8.07167 19.9917C8.07167 27.6933 19.0033 28.22 19.9517 21.9917H14.2983V18.5567H23.7267C24.7967 24.15 21.185 30 14.2983 30V30.0017C8.75 30.0017 4.29667 25.525 4.29667 20C4.29833 11.1033 14.8517 6.89833 20.9933 12.6033Z" fill="#D8BE9D"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#D8BE9D"/>
+                        <path d="M19.9999 21.1353C24.1223 21.1353 27.4642 17.7935 27.4642 13.671C27.4642 9.5486 24.1223 6.20679 19.9999 6.20679C15.8775 6.20679 12.5356 9.54865 12.5356 13.6711C12.5407 17.7914 15.8796 21.1303 19.9999 21.1353ZM19.9999 9.65184C22.2196 9.65184 24.0191 11.4513 24.0191 13.6711C24.0191 15.8909 22.2197 17.6903 19.9999 17.6903C17.7801 17.6903 15.9806 15.8909 15.9806 13.6711C15.9806 11.4513 17.7801 9.65184 19.9999 9.65184Z" fill="white"/>
+                        <path d="M27.3115 24.6722C28.1227 24.1379 28.6115 23.232 28.6126 22.2606C28.6239 21.4545 28.169 20.7142 27.4448 20.3601C26.7006 19.9884 25.8099 20.0721 25.148 20.576C22.0807 22.8122 17.9204 22.8122 14.8531 20.576C14.1902 20.0748 13.301 19.9912 12.5564 20.3601C11.8324 20.7142 11.3773 21.4536 11.3874 22.2595C11.3891 23.2306 11.8777 24.1363 12.6885 24.671C13.7287 25.3628 14.8614 25.904 16.0532 26.2787C16.2553 26.3415 16.4639 26.3997 16.679 26.4533L13.2087 29.8467C12.2984 30.7299 12.2764 32.1839 13.1596 33.0943C14.0429 34.0047 15.4969 34.0267 16.4073 33.1434C16.4262 33.125 16.4449 33.1063 16.4632 33.0873L20.0001 29.4263L23.5439 33.0942C24.4265 34.0052 25.8805 34.0284 26.7915 33.1458C27.7026 32.2633 27.7257 30.8093 26.8432 29.8982C26.8248 29.8792 26.806 29.8604 26.7869 29.842L23.3223 26.4521C23.5374 26.397 23.7468 26.3384 23.9504 26.2764C25.1408 25.9031 26.2725 25.363 27.3115 24.6722Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="#D8BE9D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2447 28.7719H20.8145C20.8145 28.7719 21.2887 28.7198 21.5307 28.4588C21.7536 28.2193 21.7464 27.7693 21.7464 27.7693C21.7464 27.7693 21.7158 25.663 22.6934 25.3529C23.657 25.0473 24.8945 27.3886 26.2061 28.2888C27.198 28.9701 27.9517 28.8207 27.9517 28.8207L31.4587 28.7719C31.4587 28.7719 33.2934 28.6589 32.4235 27.2164C32.3522 27.0984 31.9169 26.1493 29.8159 24.1992C27.6169 22.1581 27.9114 22.4882 30.5603 18.9576C32.1736 16.8075 32.8185 15.4947 32.6171 14.9325C32.4249 14.397 31.2384 14.5386 31.2384 14.5386L27.2896 14.5632C27.2896 14.5632 26.9969 14.5232 26.7798 14.653C26.5676 14.7803 26.4311 15.0769 26.4311 15.0769C26.4311 15.0769 25.8061 16.7408 24.9726 18.1558C23.2142 21.1417 22.5112 21.2992 22.2238 21.1138C21.5553 20.6817 21.7222 19.378 21.7222 18.4517C21.7222 15.5582 22.1611 14.3517 20.8676 14.0394C20.4384 13.9357 20.1225 13.8672 19.0248 13.8562C17.6158 13.8416 16.4233 13.8605 15.748 14.1913C15.2988 14.4113 14.9523 14.9015 15.1633 14.9297C15.4243 14.9646 16.0154 15.089 16.3288 15.5158C16.7334 16.0662 16.7192 17.3027 16.7192 17.3027C16.7192 17.3027 16.9516 20.7088 16.1762 21.132C15.6439 21.4222 14.9138 20.8297 13.3461 18.1209C12.5429 16.7333 11.9365 15.1996 11.9365 15.1996C11.9365 15.1996 11.8195 14.9129 11.611 14.7596C11.3578 14.5739 11.0042 14.5147 11.0042 14.5147L7.25181 14.5393C7.25181 14.5393 6.68851 14.555 6.48173 14.7999C6.29776 15.0177 6.46711 15.4684 6.46711 15.4684C6.46711 15.4684 9.40483 22.3413 12.7311 25.8049C15.7812 28.9804 19.2447 28.7719 19.2447 28.7719Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="authoriz__social-item">
+                    <a href="#" class="authoriz__social-link">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#D8BE9D"/>
+                        <path d="M24.8535 7H21.2306C17.5602 7 13.8565 9.86991 13.8565 16.2816C13.8565 19.6027 15.1858 22.1892 17.6226 23.6603L13.1626 32.208C12.9512 32.6123 12.9456 33.0705 13.1478 33.4336C13.3451 33.7882 13.7061 34 14.1129 34H16.369C16.8815 34 17.2811 33.7377 17.4728 33.2782L21.6545 24.6175H21.9597V32.9206C21.9597 33.5057 22.426 34 22.978 34H24.9489C25.5679 34 26 33.5424 26 32.8871V8.18141C26.0001 7.48584 25.5287 7 24.8535 7ZM21.9597 20.7703H21.4213C19.3338 20.7703 18.0876 18.9661 18.0876 15.9439C18.0876 12.1861 19.6619 10.8472 21.1352 10.8472H21.9597V20.7703Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="authoriz__form">
+                <form action="#" method="POST">
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-email">Адрес электронной почты:</label>
+                    </div>
+                    <input name="authoriz__input-email" type="email">
+                  </div>
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-password">Пароль:</label>
+                      <a href="#">Забыли пароль?</a>
+                    </div>
+                    <input name="authoriz__input-password" type="password">
+                  </div>
+                  <button type="submit" class="btn authoriz-btn">Войти</button>
+                </form>
+              </div>
+            </div>
+            <button class="modal-close authoriz__close">
+              <div class="authoriz__close-text">Закрыть</div>
+              <div class="authoriz__close-icon">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" width="2" height="10" rx="1" fill="#D2A158"/>
+                  <rect x="10" y="4" width="2" height="10" rx="1" transform="rotate(90 10 4)" fill="#D2A158"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal callback" data-modal="callback">
+        <div class="modal__body callback__modal">
+          <div class="callback__block">
+            <div class="callback__body">
+              <h3 class="modal-title callback-title">Обратный звонок</h3>
+              <p class="modal-text callback-text">Оставьте ваш номер телефона и наш менеджер свяжется с вами в ближайшее время</p>
+              <div class="modal__form authoriz__form">
+                <form action="#" method="POST">
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-callback">Ваш телефон:</label>
+                    </div>
+                    <input name="authoriz__input-callback" type="tel" class="mask"> 
+                  </div>
+                  <button type="submit" class="btn authoriz-btn">Позвоните мне</button>
+                </form>
+              </div>
+            </div>
+            <button class="modal-close authoriz__close">
+              <div class="authoriz__close-text">Закрыть</div>
+              <div class="authoriz__close-icon">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" width="2" height="10" rx="1" fill="#D2A158"/>
+                  <rect x="10" y="4" width="2" height="10" rx="1" transform="rotate(90 10 4)" fill="#D2A158"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal conemail" data-modal="conemail">
+        <div class="modal__body conemail__modal">
+          <div class="conemail__block">
+            <div class="conemail__body">
+              <h3 class="modal-title conemail-title">Подтвердите электронную почту</h3>
+              <p class="modal-text conemail-text">На указанную Вами электронную почту выслано письмо с кодом для подтверждения регистрации</p>
+              <div class="modal__form authoriz__form">
+                <form action="#" method="POST">
+                  <div class="input authoriz__form__input">
+                    <div class="input__header">
+                      <label for="authoriz__input-conemail">Введите код:</label>
+                      <a href="#">Код не пришел?</a>
+                    </div>
+                    <input name="authoriz__input-conemail" type="tel">
+                  </div>
+                  <button type="submit" class="btn authoriz-btn">Подтвердить</button>
+                </form>
+              </div>
+            </div>
+            <button class="modal-close authoriz__close">
+              <div class="authoriz__close-text">Закрыть</div>
+              <div class="authoriz__close-icon">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" width="2" height="10" rx="1" fill="#D2A158"/>
+                  <rect x="10" y="4" width="2" height="10" rx="1" transform="rotate(90 10 4)" fill="#D2A158"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal cart" data-modal="cart">
+        <div class="modal__body cart__modal">
+          <div class="cart__block">
+            <div class="cart__header">
+              <h3 class="cart-title">Ваша корзина</h3>
+              <button class="modal-close cart__close">
+                <div class="authoriz__close-text">Продолжить покупки</div>
+                <div class="authoriz__close-icon">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" width="2" height="10" rx="1" fill="#D2A158"/>
+                    <rect x="10" y="4" width="2" height="10" rx="1" transform="rotate(90 10 4)" fill="#D2A158"/>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="cart__body">
+              <ul class="cart__list">
+                <li class="cart__card">
+                  <div class="cart__card__product">
+                    <a href="#" class="cart__card__link">
+                      <div class="cart__card-img"><img src="img/product1.png" alt="картинка"></div>
+                      <div class="cart__card__descr">
+                        <span class="cart__card-title">Арахисовая паста Хрустящая</span>
+                        <div class="cart__card__char">
+                          <span class="cart__card-price"><span>340</span> RUB</span>
+                          <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart__card__actions">
+                    <div class="product__quantity">
+                      <button class="product__quantity-change product__quantity-minus">
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                        </svg>                   
+                      </button>
+                      <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                      <button class="product__quantity-change product__quantity-plus">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                          <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                        </svg>                 
+                      </button>
+                    </div>
+                    <button class="cart__card-delete">
+                      <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                        <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                        <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                        <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                        <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                        <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                        <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__card">
+                  <div class="cart__card__product">
+                    <a href="#" class="cart__card__link">
+                      <div class="cart__card-img"><img src="img/product2.png" alt="картинка"></div>
+                      <div class="cart__card__descr">
+                        <span class="cart__card-title">Арахисовая паста с финиками и кофе</span>
+                        <div class="cart__card__char">
+                          <span class="cart__card-price"><span>280</span> RUB</span>
+                          <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart__card__actions">
+                    <div class="product__quantity">
+                      <button class="product__quantity-change product__quantity-minus">
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                        </svg>                   
+                      </button>
+                      <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                      <button class="product__quantity-change product__quantity-plus">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                          <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                        </svg>                 
+                      </button>
+                    </div>
+                    <button class="cart__card-delete">
+                      <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                        <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                        <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                        <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                        <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                        <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                        <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__card">
+                  <div class="cart__card__product">
+                    <a href="#" class="cart__card__link">
+                      <div class="cart__card-img"><img src="img/product3.png" alt="картинка"></div>
+                      <div class="cart__card__descr">
+                        <span class="cart__card-title">Арахисовая паста “Классическая” с морской солью</span>
+                        <div class="cart__card__char">
+                          <span class="cart__card-price"><span>300</span> RUB</span>
+                          <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cart__card__actions">
+                    <div class="product__quantity">
+                      <button class="product__quantity-change product__quantity-minus">
+                        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                        </svg>                   
+                      </button>
+                      <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                      <button class="product__quantity-change product__quantity-plus">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                          <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                        </svg>                 
+                      </button>
+                    </div>
+                    <button class="cart__card-delete">
+                      <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                        <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                        <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                        <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                        <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                        <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                        <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cart__footer">
+              <div class="span cart__footer-total-price">
+                <span class="cart__footer-total">Итого:</span>
+                <span class="cart__footer-price"><span>1200</span> RUB</span>
+              </div>
+              <button class="btn cart__footer-btn">Оформить заказ</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

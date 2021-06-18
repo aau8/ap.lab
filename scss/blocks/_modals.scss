@@ -250,12 +250,23 @@
 }
 
 // Корзина
+.cart__modal {
+
+  @media screen and (max-width: $wwa3 + px) {
+    padding: 0;
+  }
+}
+
 .cart__block {
   max-width: 762px;
   width: 100%;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
+  
+  @media screen and (max-width: $wwa3 + px) {
+    border-radius: 0;
+  }
 }
 
 .cart__header {
@@ -264,16 +275,41 @@
   align-items: center;
   justify-content: space-between;
   padding: 40px 80px 0;
+
+  @media screen and (max-width: $wwa2 + px) {
+    padding: 32px 40px 0;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    padding: 24px 24px 0;
+  }
+}
+
+.cart-title {
+  white-space: nowrap;
 }
 
 .cart__close {
   display: flex;
   align-items: center;
+  margin: 0 0 0 8px;
+}
+
+.authoriz__close-text {
+  text-align: right;
 }
 
 .cart__body {
   margin: 20px 0 0 0;
   padding: 0 80px 40px;
+
+  @media screen and (max-width: $wwa2 + px) {
+    padding: 0 40px 32px;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    padding: 0 24px 32px;
+  }
 }
 
 .cart__card {
@@ -332,10 +368,6 @@
   margin: 0 0 6px 0;
 }
 
-.cart__card__char {
-
-}
-
 .cart__card-price {
   color: $main;
 }
@@ -343,9 +375,6 @@
 .cart__card-weight {
   color: $second;
 }
-
-
-
 
 .cart__card__actions {
   display: flex;
@@ -391,6 +420,14 @@
   justify-content: space-between;
   background: #fafafa;
   padding: 20px 80px;
+
+  @media screen and (max-width: $wwa2 + px) {
+    padding: 20px 40px;
+  }
+
+  @media screen and (max-width: $wwa3 + px) {
+    padding: 20px 24px;
+  }
 }
 
 .cart__footer-total-price {
@@ -411,4 +448,59 @@
 
 .cart__footer-btn {
   padding: 12px 32px;
+}
+
+.cart__header,
+.cart__body,
+.cart__footer {
+  
+}
+
+.cart__card {
+
+  @media screen and (max-width: $wwa3 + px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cart__card__product {
+  max-width: none;
+  width: 70%;
+  padding: 0 24px 0 0;
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+  }
+}
+
+.cart__card__actions {
+  justify-content: flex-end;
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 0 0;
+  }
+}
+
+.product__quantity {
+  min-width: 142px;
+}
+
+.cart__footer {
+
+  @media screen and (max-width: $wwa3 + px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.cart__footer-btn {
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
 }
