@@ -506,7 +506,6 @@ h5 {
 
 .input {
   width: 100%;
-  margin: 24px 0 0 0;
 }
 
 .input__header {
@@ -551,7 +550,7 @@ h5 {
   width: 100%;
   height: 56px;
   font-size: 16px;
-  background: var(--bg);
+  background: #fafafa;
   border: 1px solid var(--outline);
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -3648,4 +3647,269 @@ h5 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 12px 0 0;
+}
+
+.order__header-title {
+  margin: 0 0 48px 0;
+}
+
+.order__inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 650px;
+      grid-template-columns: 360px 650px;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
+  row-gap: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .order__inputs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 48px;
+  }
+}
+
+.order__inputs__list {
+  margin: 28px 0 0 0;
+}
+
+.order__contacts .order__inputs__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .order__contacts .order__inputs__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .order__contacts .order__inputs__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+.order__address .order__inputs__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr .5fr .5fr;
+      grid-template-columns: 1fr .5fr .5fr;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 670px) {
+  .order__address .order__inputs__list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .order__contacts__input-big {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.order__checkboxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 360px 360px;
+      grid-template-columns: 360px 360px;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
+  margin: 60px 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .order__checkboxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 48px;
+  }
+}
+
+.order__checkboxes-title {
+  margin: 0 0 28px 0;
+}
+
+.order__checkboxes__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+
+.order__checkbox {
+  position: relative;
+}
+
+.order__checkbox__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 20px 16px 28px;
+  border: 1px solid var(--outline);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-transition: var(--tr);
+  -o-transition: var(--tr);
+  transition: var(--tr);
+}
+
+.order__checkbox__body .order__checkbox-tick svg path {
+  -webkit-transition: var(--tr);
+  -o-transition: var(--tr);
+  transition: var(--tr);
+}
+
+.order__checkbox__content {
+  width: 80%;
+}
+
+.order__checkbox-title {
+  margin: 0 0 4px 0;
+}
+
+.order__checkbox-tick {
+  width: 20%;
+  margin: 0 0 0 12px;
+  text-align: right;
+}
+
+.order__checkbox input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.order__checkbox input[type="radio"]:checked + .order__checkbox__body {
+  border: 1px solid var(--accent);
+}
+
+.order__checkbox input[type="radio"]:checked + .order__checkbox__body .order__checkbox-tick svg path {
+  fill: var(--accent);
+}
+
+.order__cart {
+  max-width: none;
+  margin: 60px 0 0 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.order__cart .cart__header,
+.order__cart .cart__body,
+.order__cart .cart__footer {
+  padding: 0;
+}
+
+.order__cart .cart__footer {
+  background: none;
+  margin: 36px 0 0 0;
+}
+
+@media screen and (max-width: 670px) {
+  .order__cart .cart__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.order__cart .cart__card__product {
+  max-width: none;
+  width: 70%;
+  padding: 0 24px 0 0;
+}
+
+@media screen and (max-width: 670px) {
+  .order__cart .cart__card__product {
+    width: 100%;
+  }
+}
+
+.order__cart .cart__card__actions {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 670px) {
+  .order__cart .cart__card__actions {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 24px 0 0 0;
+  }
+}
+
+.order__cart .product__quantity {
+  min-width: 142px;
+}
+
+@media screen and (max-width: 670px) {
+  .order__cart .cart__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .order__cart .cart__footer-btn {
+    width: 100%;
+    margin: 16px 0 0 0;
+  }
 }

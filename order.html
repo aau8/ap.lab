@@ -134,7 +134,268 @@
       <div class="container">
         <h1 class="order__header-title">Оформление заказа</h1>
         <div class="order__body">
-          
+          <form action="#">
+            <div class="order__inputs">
+              <div class="order__contacts">
+                <h3 class="order__inputs-title">Контактные данные</h3>
+                <div class="order__inputs__list">
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-phone">Ваш номер телефона:</label>
+                    </div>
+                    <input name="order__contacts-phone" type="tel" class="mask">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-email">Ваша электронная почта:</label>
+                    </div>
+                    <input name="order__contacts-email" type="email">
+                  </div>
+                </div>
+              </div>
+              <div class="order__address">
+                <h3 class="order__inputs-title">Адрес доставки</h3>
+                <div class="order__inputs__list">
+                  <div class="input order__contacts__input order__contacts__input-big">
+                    <div class="input__header">
+                      <label for="order__contacts-city">Город:</label>
+                    </div>
+                    <input name="order__contacts-city" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-house">Дом:</label>
+                    </div>
+                    <input name="order__contacts-house" type="email">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-apartment">Квартира:</label>
+                    </div>
+                    <input name="order__contacts-apartment" type="text">
+                  </div>
+                  <div class="input order__contacts__input order__contacts__input-big">
+                    <div class="input__header">
+                      <label for="order__contacts-street">Улица:</label>
+                    </div>
+                    <input name="order__contacts-street" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-doorway">Подъезд:</label>
+                    </div>
+                    <input name="order__contacts-doorway" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-floor">Этаж:</label>
+                    </div>
+                    <input name="order__contacts-floor" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__checkboxes">
+              <div class="order__delivery">
+                <h3 class="order__checkboxes-title">Адрес доставки</h3>
+                <div class="order__checkboxes__list">
+                  <div class="order__checkbox">
+                    <input type="radio" name="checkbox-delivery">
+                    <div class="order__checkbox__body">
+                      <div class="order__checkbox__content">
+                        <h5 class="order__checkbox-title">Курьером по Москве</h5>
+                        <span class="order__checkbox-text">Доставляем с 12:00 до 22:00</span>
+                        <span class="order__checkbox-text">500 руб в пределах МКАДа</span>
+                      </div>
+                      <div class="order__checkbox-tick">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.8686 27.4644L0.468609 17.0644C-0.156203 16.4396 -0.156203 15.4265 0.468609 14.8017L2.7313 12.5389C3.35611 11.914 4.36923 11.914 4.99405 12.5389L12 19.5448L27.0059 4.53892C27.6307 3.91411 28.6439 3.91411 29.2687 4.53892L31.5314 6.80167C32.1562 7.42648 32.1562 8.43955 31.5314 9.06442L13.1314 27.4645C12.5065 28.0893 11.4934 28.0893 10.8686 27.4644Z" fill="#EDEDED"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order__checkbox">
+                    <input type="radio" name="checkbox-delivery" checked>
+                    <div class="order__checkbox__body">
+                      <div class="order__checkbox__content">
+                        <h5 class="order__checkbox-title">Почтой России</h5>
+                        <span class="order__checkbox-text">Доставка от 3 до 5 дней</span>
+                      </div>
+                      <div class="order__checkbox-tick">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.8686 27.4644L0.468609 17.0644C-0.156203 16.4396 -0.156203 15.4265 0.468609 14.8017L2.7313 12.5389C3.35611 11.914 4.36923 11.914 4.99405 12.5389L12 19.5448L27.0059 4.53892C27.6307 3.91411 28.6439 3.91411 29.2687 4.53892L31.5314 6.80167C32.1562 7.42648 32.1562 8.43955 31.5314 9.06442L13.1314 27.4645C12.5065 28.0893 11.4934 28.0893 10.8686 27.4644Z" fill="#EDEDED"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order__payment">
+                <h3 class="order__checkboxes-title">Способ оплаты</h3>
+                <div class="order__checkboxes__list">
+                  <div class="order__checkbox">
+                    <input type="radio" name="checkbox-payment" checked>
+                    <div class="order__checkbox__body">
+                      <div class="order__checkbox__content">
+                        <h5 class="order__checkbox-title">Наложенным платежом</h5>
+                        <span class="order__checkbox-text">Оплата в отделении почты</span>
+                      </div>
+                      <div class="order__checkbox-tick">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.8686 27.4644L0.468609 17.0644C-0.156203 16.4396 -0.156203 15.4265 0.468609 14.8017L2.7313 12.5389C3.35611 11.914 4.36923 11.914 4.99405 12.5389L12 19.5448L27.0059 4.53892C27.6307 3.91411 28.6439 3.91411 29.2687 4.53892L31.5314 6.80167C32.1562 7.42648 32.1562 8.43955 31.5314 9.06442L13.1314 27.4645C12.5065 28.0893 11.4934 28.0893 10.8686 27.4644Z" fill="#EDEDED"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order__cart cart__block">
+              <div class="cart__header">
+                <h3 class="cart-title">Ваша корзина</h3>
+              </div>
+              <div class="cart__body">
+                <ul class="cart__list">
+                  <li class="cart__card">
+                    <div class="cart__card__product">
+                      <a href="#" class="cart__card__link">
+                        <div class="cart__card-img"><img src="img/product1.png" alt="картинка"></div>
+                        <div class="cart__card__descr">
+                          <span class="cart__card-title">Арахисовая паста Хрустящая</span>
+                          <div class="cart__card__char">
+                            <span class="cart__card-price"><span>340</span> RUB</span>
+                            <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cart__card__actions">
+                      <div class="product__quantity">
+                        <button class="product__quantity-change product__quantity-minus">
+                          <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                          </svg>                   
+                        </button>
+                        <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                        <button class="product__quantity-change product__quantity-plus">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                            <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                          </svg>                 
+                        </button>
+                      </div>
+                      <button class="cart__card-delete">
+                        <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.6">
+                          <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                          <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                          <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                          <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                          <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                          <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="cart__card">
+                    <div class="cart__card__product">
+                      <a href="#" class="cart__card__link">
+                        <div class="cart__card-img"><img src="img/product2.png" alt="картинка"></div>
+                        <div class="cart__card__descr">
+                          <span class="cart__card-title">Арахисовая паста с финиками и кофе</span>
+                          <div class="cart__card__char">
+                            <span class="cart__card-price"><span>280</span> RUB</span>
+                            <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cart__card__actions">
+                      <div class="product__quantity">
+                        <button class="product__quantity-change product__quantity-minus">
+                          <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                          </svg>                   
+                        </button>
+                        <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                        <button class="product__quantity-change product__quantity-plus">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                            <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                          </svg>                 
+                        </button>
+                      </div>
+                      <button class="cart__card-delete">
+                        <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.6">
+                          <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                          <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                          <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                          <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                          <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                          <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="cart__card">
+                    <div class="cart__card__product">
+                      <a href="#" class="cart__card__link">
+                        <div class="cart__card-img"><img src="img/product3.png" alt="картинка"></div>
+                        <div class="cart__card__descr">
+                          <span class="cart__card-title">Арахисовая паста “Классическая” с морской солью</span>
+                          <div class="cart__card__char">
+                            <span class="cart__card-price"><span>300</span> RUB</span>
+                            <span class="cart__card-weight">/ <span>230</span> гр.</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cart__card__actions">
+                      <div class="product__quantity">
+                        <button class="product__quantity-change product__quantity-minus">
+                          <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="16" height="2" rx="1" fill="#D2A158"/>
+                          </svg>                   
+                        </button>
+                        <input type="text" class="product__quantity-input" maxlength="4" min="1" value="1">
+                        <button class="product__quantity-change product__quantity-plus">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="7" width="16" height="2" rx="1" fill="#D2A158"/>
+                            <rect x="9" width="16" height="2" rx="1" transform="rotate(90 9 0)" fill="#D2A158"/>
+                          </svg>                 
+                        </button>
+                      </div>
+                      <button class="cart__card-delete">
+                        <svg width="20" height="37" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g opacity="0.6">
+                          <path d="M12.7589 7.24609C12.5002 7.24609 12.2905 7.45577 12.2905 7.71448V16.5669C12.2905 16.8255 12.5002 17.0353 12.7589 17.0353C13.0176 17.0353 13.2273 16.8255 13.2273 16.5669V7.71448C13.2273 7.45577 13.0176 7.24609 12.7589 7.24609Z" fill="#222222"/>
+                          <path d="M7.23157 7.24609C6.97286 7.24609 6.76318 7.45577 6.76318 7.71448V16.5669C6.76318 16.8255 6.97286 17.0353 7.23157 17.0353C7.49028 17.0353 7.69995 16.8255 7.69995 16.5669V7.71448C7.69995 7.45577 7.49028 7.24609 7.23157 7.24609Z" fill="#222222"/>
+                          <path d="M3.20361 5.95395V17.4939C3.20361 18.176 3.45372 18.8165 3.89064 19.2761C4.32554 19.737 4.93077 19.9987 5.56419 19.9998H14.4261C15.0597 19.9987 15.665 19.737 16.0997 19.2761C16.5366 18.8165 16.7867 18.176 16.7867 17.4939V5.95395L15.8499 5.99511V17.4939C15.8499 18.3751 15.227 19.063 14.4261 19.063H5.56419C4.76336 19.063 4.14038 18.3751 4.14038 17.4939V5.99511L3.20361 5.95395Z" fill="#222222"/>
+                          <path d="M4.14038 5.99511H15.8499L16.7867 5.95395V5.05835H16.3277H3.66266H3.20361V5.95395L4.14038 5.99511Z" fill="#222222"/>
+                          <path id="delete-cap" fill-rule="evenodd" clip-rule="evenodd" d="M18.102 3.99339C18.2182 4.8846 17.6554 5.72366 16.7869 5.95419L15.8501 5.99536H4.14058L3.20382 5.95419C2.3353 5.72366 1.77251 4.8846 1.88869 3.99339C2.00505 3.10236 2.76416 2.43583 3.66287 2.43565H6.06095V1.85017C6.05821 1.35782 6.25288 0.885048 6.60142 0.537238C6.94996 0.18961 7.42347 -0.00396362 7.91582 6.15416e-05H12.0749C12.5673 -0.00396362 13.0408 0.18961 13.3893 0.537238C13.7379 0.885048 13.9325 1.35782 13.9298 1.85017V2.43565H16.3279C17.2266 2.43583 17.9857 3.10236 18.102 3.99339ZM3.66287 3.37242H16.3279C16.7935 3.37242 17.1709 3.74987 17.1709 4.2155C17.1709 4.68114 16.7935 5.05859 16.3279 5.05859H3.66287C3.19723 5.05859 2.81978 4.68114 2.81978 4.2155C2.81978 3.74987 3.19723 3.37242 3.66287 3.37242ZM7.26356 1.19938C7.09048 1.37154 6.99461 1.60628 6.99772 1.85017V2.43565H12.993V1.85017C12.9961 1.60628 12.9003 1.37136 12.7272 1.19938C12.5543 1.02721 12.319 0.932619 12.0749 0.936827H7.91582C7.67175 0.932619 7.43646 1.02721 7.26356 1.19938Z" fill="#222222"/>
+                          <path d="M9.99524 7.24609C9.73653 7.24609 9.52686 7.45577 9.52686 7.71448V16.5669C9.52686 16.8255 9.73653 17.0353 9.99524 17.0353C10.254 17.0353 10.4636 16.8255 10.4636 16.5669V7.71448C10.4636 7.45577 10.254 7.24609 9.99524 7.24609Z" fill="#222222"/>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="cart__footer">
+                <div class="span cart__footer-total-price">
+                  <span class="cart__footer-total">Итого:</span>
+                  <span class="cart__footer-price"><span>1200</span> RUB</span>
+                </div>
+                <button type="submit" class="btn cart__footer-btn">Оформить заказ</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
