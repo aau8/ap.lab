@@ -1,0 +1,45 @@
+.text {
+
+  h4 {
+    margin: 0 0 16px 0;
+  }
+
+  & p {
+    margin: 12px 0;
+  }
+  
+  ul {
+    padding: 0 0 0 12px;
+    margin: 12px 0 40px 0;
+  }
+
+  ol {
+    margin: 12px 0 40px 0;
+  }
+
+  ul li{
+    
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      transform: translate(0,-4px);
+      background: $main;
+      border-radius: 10px;
+      margin: 0 8px 0 0;
+    }
+  }
+
+  li {
+    margin: 2px 0;
+  }
+
+  h5 {
+    margin: 20px 0 12px 0;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}

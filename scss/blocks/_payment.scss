@@ -1,0 +1,57 @@
+.payment__body {
+  margin: 40px 0 0 0;
+}
+
+.payment__list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+  margin: 28px 0 40px 0;
+
+  @media screen and (max-width: $wwa2 + px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+.payment-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.payment-icon {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg;
+  border-radius: 100px;
+}
+
+.payment-text {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+.payment__content {
+  max-width: 700px;
+  width: 100%;
+}
+
+.payment__types__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 22px 0 46px 0;
+}
+
+.payment__types-item {
+  margin: 0 20px 20px 0;
+}
+
+.payment-strong {
+  display: inline-block;
+  margin: 0 0 40px 0;
+}
