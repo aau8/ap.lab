@@ -113,3 +113,57 @@
   color: $second;
   margin: 0 0 0 8px;
 }
+
+// Инпуты
+.input {
+  width: 100%;
+  margin: 24px 0 0 0;
+}
+
+.input__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 12px 0;
+}
+
+.input__header a {
+  font-size: 14px;
+  color: $main;
+  opacity: .5;
+  transition: $tr;
+  text-align: right;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.input__header span {
+  font-size: 14px;
+  color: $main;
+  opacity: .5;
+  text-align: right;
+}
+
+.input input {
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  background: $bg;
+  border: 1px solid $outline;
+  border-radius: 5px;
+  padding: 0 16px;
+}
+
+.input label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}

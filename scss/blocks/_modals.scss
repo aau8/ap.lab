@@ -1,0 +1,414 @@
+.modals {
+
+  &.bg-show .modals-bg {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.authoriz-show .authoriz {
+    transform: translate(0);
+  }
+}
+
+.modals-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(85,85,85,.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: $tr;
+
+  &._show {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: translate(0,100vh);
+  transition: $tr;
+  // pointer-events: none;
+  z-index: 1;
+
+  &._show {
+    transform: translate(0);
+  }
+}
+
+.modal__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  transition: .2s;
+}
+
+// Общие стили
+.modal__form {
+  margin: 16px 0 0 0;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-text {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+// Авторизация и вход
+.authoriz__block {
+  max-width: 552px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 0 0 0;
+}
+
+.authoriz__block {
+  
+}
+
+.authoriz__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $outline;
+}
+.authoriz__tab {
+  width: 50%;
+  font-size: 28px;
+  font-weight: 500;
+  color: $second;
+  opacity: .8;
+  padding: 32px 0;
+
+  &:not(:last-child) {
+    width: 70%;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 44%;
+      transform: translate(0,-50%);
+      background: $outline;
+    }
+  }
+
+  &._active {
+    color: $main;
+    opacity: 1;
+    border-bottom: 1px solid $accent;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    padding: 24px 0;
+  }
+}
+
+.authoriz__body {
+  display: none;
+  padding: 36px 96px 0;
+
+  &._show {
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 28px 24px 0; 
+  }
+}
+
+.authoriz__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+}
+
+.authoriz__social-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 8px 0 0;
+}
+
+.authoriz__social-link {
+  width: 100%;
+  height: 100%;
+}
+
+.authoriz__social-title {
+
+  @media screen and (max-width: 600px) {
+    margin: 0 40px 8px 0;
+  }
+}
+
+.authoriz__social__list {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 42px;
+
+  @media screen and (max-width: 600px) {
+    margin: 0 0 0 0;
+  }
+}
+
+.authoriz__form {
+  margin: 16px 0 0 0;
+}
+
+.authoriz-btn {
+  width: 100%;
+  margin: 28px 0 0 0;
+}
+
+.authoriz__close {
+  display: flex;
+  align-items: center;
+  margin: 36px auto;
+
+  &-text {
+    font-weight: 500;
+    color: $accent;
+    opacity: .7;
+  }
+
+  &-icon {
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 10px;
+    transform: rotate(45deg);
+
+    & svg {
+      width: 100%;
+      height: 100%;
+      opacity: .7;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 24px auto 28px;
+  }
+}
+
+
+// Обратный звонок
+.callback__body {
+  padding: 36px 96px 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 28px 24px 0; 
+  }
+}
+
+.callback__block {
+  max-width: 552px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 0 0 0;
+}
+
+// Подтверждение email
+.conemail__body {
+  padding: 36px 96px 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 28px 24px 0; 
+  }
+}
+
+.conemail__block {
+  max-width: 552px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px 0 0 0;
+}
+
+// Корзина
+.cart__block {
+  max-width: 762px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cart__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px 0;
+}
+
+.cart__close {
+  display: flex;
+  align-items: center;
+}
+
+.cart__body {
+  margin: 20px 0 0 0;
+  padding: 0 80px 40px;
+}
+
+.cart__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $outline;
+  }
+}
+
+.cart__card__product {
+  max-width: 340px;
+  width: 100%;
+}
+
+.cart__card__link {
+  display: flex;
+
+  &:hover {
+
+    & .cart__card-title {
+      color: $accent;
+    }
+  }
+}
+
+.cart__card-img {
+  min-width: 100px;
+  width: 100px;
+  height: 90px;
+  border-radius: 9px;
+  overflow: hidden;
+  margin: 0 20px 0 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.cart__card__descr {
+  // height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart__card-title {
+  font-weight: 500;
+  color: $main;
+  transition: $tr;
+  margin: 0 0 6px 0;
+}
+
+.cart__card__char {
+
+}
+
+.cart__card-price {
+  color: $main;
+}
+
+.cart__card-weight {
+  color: $second;
+}
+
+
+
+
+.cart__card__actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart__card-delete {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 40px;
+
+  & svg {
+    overflow: auto;
+    
+    & path {
+      transition: $tr;
+    }
+
+    & #delete-cap {
+      transform-origin: right center;
+    }
+  }
+
+  &:hover {
+
+    & path {
+      fill: #DE5A5A;
+    }
+
+    & #delete-cap {
+      transform: translate(-5px,-1px) rotate(45deg);
+    }
+
+  }
+}
+
+.cart__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 20px 80px;
+}
+
+.cart__footer-total-price {
+  display: flex;
+  align-items: center;
+}
+
+.cart__footer-total {
+  font-weight: 500;
+  color: $second;
+  margin: 0 8px 0 0;
+}
+
+.cart__footer-price {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cart__footer-btn {
+  padding: 12px 32px;
+}
