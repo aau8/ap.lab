@@ -3953,3 +3953,21 @@ h5 {
 .order__checkbox input[type="radio"]:checked + .order__checkbox__body .order__checkbox-tick svg path {
   fill: var(--accent);
 }
+
+.order__cart {
+  max-width: none;
+  margin: 60px 0 0 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.order__cart .cart__header,
+.order__cart .cart__body,
+.order__cart .cart__footer {
+  padding: 0;
+}
+
+.order__cart .cart__footer {
+  background: none;
+  margin: 36px 0 0 0;
+}
