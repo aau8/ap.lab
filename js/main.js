@@ -182,3 +182,54 @@ tabHeaderElems.forEach(tabHeader => {
 })
 
 }
+
+// Изменение значения инпутов при клике на плюс и минус
+if (document.querySelector('.product__quantity')) {
+
+const changeQElems = document.querySelectorAll('.product__quantity');
+
+for (let i = 0; i < changeQElems.length; i++) {
+  const changeQ = changeQElems[i];
+
+  const changeInput = changeQ.querySelector('.product__quantity-input'),
+        changePlus = changeQ.querySelector('.product__quantity-plus'),
+        changeMinus = changeQ.querySelector('.product__quantity-minus');
+
+  increasingValue(changeInput, changePlus);
+  reducingValue(changeInput, changeMinus);
+  manualChange(changeInput);
+}
+
+function increasingValue(changeInput, changePlus) {
+  changePlus.addEventListener('click', (e) => {
+    e.stopPropagation();
+    changeInput.value = parseInt(changeInput.value) + 1;
+  })
+}
+
+function reducingValue(changeInput, changeMinus) {
+  changeMinus.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (changeInput.value <= 1) { return }
+    changeInput.value = parseInt(changeInput.value) - 1;
+  })
+}
+
+// Изменение инпута, если указали значение меньше 1
+function manualChange(changeInput) {
+  changeInput.addEventListener('change', () => {
+    if (changeInput.value <= 1) {
+      changeInput.value = 1;
+    }
+  })
+  
+  changeInput.addEventListener('keypress', function(e) {
+    const inputValue = e.charCode;
+
+    if(!(inputValue >= 48 && inputValue <= 57) && (inputValue != 43 && inputValue != 0 && inputValue != 40 && inputValue != 41 && inputValue != 45)) {
+      e.preventDefault();
+    }
+  }); `
+`
+}
+}
