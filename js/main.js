@@ -92,15 +92,13 @@ modalOpenElems.forEach(modalOpen => {
 function closeModalWithClickBg(modal, modalOpen) {
   document.addEventListener('click', (e) => {
     if (modal.classList.contains('_show')) {
+        const modalBody = modal.querySelector('.modal-card');
         const target = e.target,
-            itsModal = target == modal || modal.contains(target),
-            isBtnModalOpen = target == modalOpen,
-            modalShow = modal.classList.contains('_show');
-      
-      // console.log(itsModal,isBtnModalOpen)
+              itsModal = target == modalBody || modalBody.contains(target),
+              isBtnModalOpen = target == modalOpen,
+              modalShow = modal.classList.contains('_show');
 
       if (!itsModal && !isBtnModalOpen && modalShow) {
-        console.log('ok')
         modalBg.classList.remove('_show');
         modal.classList.remove('_show');
         body.classList.remove('_lock');
