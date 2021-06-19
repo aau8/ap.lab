@@ -178,6 +178,10 @@
 
 .authoriz__form {
   margin: 16px 0 0 0;
+
+  & .authoriz__form__input {
+    margin: 24px 0 0 0;
+  }
 }
 
 .authoriz-btn {

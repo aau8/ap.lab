@@ -163,3 +163,24 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 maskPhone(".mask");
 
 // Табы
+if (document.querySelector('.tab')) {
+
+const tabHeaderElems = document.querySelectorAll('.tab-header'),
+      tabBodyElems = document.querySelectorAll('.tab-body');
+
+tabHeaderElems.forEach(tabHeader => {
+  tabHeader.addEventListener('click', () => {
+    const tabHeaderData = tabHeader.dataset.tabHeader,
+          tabBody = tabHeader.closest('.tab').querySelector(`[data-tab-body="${tabHeaderData}"]`);
+
+    for (let i = 0; i < tabHeaderElems.length; i++) {
+      tabHeaderElems[i].classList.remove('_active');
+      tabBodyElems[i].classList.remove('_show');
+    }
+
+    tabHeader.classList.add('_active');
+    tabBody.classList.add('_show');
+  })
+})
+
+}

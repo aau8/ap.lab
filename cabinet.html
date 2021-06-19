@@ -136,14 +136,14 @@
       </div>
       <div class="container container__cabinet__header">
         <div class="cabinet__header">
-          <button class="tab-header cabinet__tab-header cabinet__tab-header-data _active">Персональные данные</button>
-          <button class="tab-header cabinet__tab-header cabinet__tab-header-orders">Мои заказы</button>
+          <button class="tab-header cabinet__tab-header cabinet__tab-header-data _active" data-tab-header="personal-data">Персональные данные</button>
+          <button class="tab-header cabinet__tab-header cabinet__tab-header-orders" data-tab-header="orders">Мои заказы</button>
           <button class="btn-outline cabinet__header-btn">Сохранить изменения</button>
         </div>
       </div>
       <div class="container">
         <div class="cabinet__body">
-          <div class="tab-body cabinet__tab-body cabinet__tab-body-inputs _show">
+          <div class="tab-body cabinet__tab-body cabinet__tab-body-inputs _show" data-tab-body="personal-data">
             <div class="order__inputs cabinet__inputs">
               <div class="order__contacts cabinet__contacts">
                 <h3 class="order__inputs-title">Контактные данные</h3>
@@ -223,7 +223,7 @@
             </div>
             <button class="btn-outline cabinet__inputs-btn">Сохранить изменения</button> 
           </div>
-          <div class="tab-body cabinet__tab-body cabinet__tab-body-table">
+          <div class="tab-body cabinet__tab-body cabinet__tab-body-table" data-tab-body="orders">
             <div class="cabinet__table">
               <table>
                 <tr>
@@ -327,12 +327,12 @@
       <div class="modals-bg"></div>
       <div class="modal authoriz" data-modal="authoriz">
         <div class="modal__body authoriz__modal">
-          <div class="authoriz__block">
+          <div class="tab authoriz__block">
             <div class="authoriz__header">
-              <button class="authoriz__tab" data-tab="sign-up">Регистрация</button>
-              <button class="authoriz__tab _active" data-tab="sign-in">Вход</button>
+              <button class="tab-header authoriz__tab" data-tab-header="sign-up">Регистрация</button>
+              <button class="tab-header authoriz__tab _active" data-tab-header="sign-in">Вход</button>
             </div>
-            <div class="authoriz__body" data-tab-body="sign-up">
+            <div class="tab-body authoriz__body" data-tab-body="sign-up">
               <div class="authoriz__social">
                 <span class="authoriz__social-title">Через соц сети:</span>
                 <ul class="authoriz__social__list">
@@ -397,7 +397,7 @@
                 </form>
               </div>
             </div>
-            <div class="authoriz__body _show" data-tab-body="sign-in">
+            <div class="tab-body authoriz__body _show" data-tab-body="sign-in">
               <div class="authoriz__social">
                 <span class="authoriz__social-title">Через соц сети:</span>
                 <ul class="authoriz__social__list">
