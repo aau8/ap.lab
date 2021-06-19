@@ -2,12 +2,29 @@
   margin: 50px 0 20px 0;
 }
 
+.breadcrumbs__body {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  }
+}
+
 .breadcrumbs__list {
   display: flex;
   align-items: center;
+  overflow-x: auto;
 }
 
 .breadcrumbs-item {
+  display: flex;
+  align-items: center;
 
   &:not(:first-child) {
     margin: 0 0 0 10px;
@@ -20,9 +37,14 @@
     }
   }
 
+  &:last-child {
+    padding: 0 32px 0 0;
+  }
+
   & a {
     font-size: 14px;
     color: $main;
+    white-space: nowrap;
   }
 
   &:last-child a {

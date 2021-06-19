@@ -130,11 +130,133 @@
         </div>
       </div>
     </section>
-    <section class="cabinet">
+    <section class="cabinet tab">
       <div class="container">
         <h1 class="cabinet__header-title">Личный кабинет</h1>
+      </div>
+      <div class="container container__cabinet__header">
+        <div class="cabinet__header">
+          <button class="tab-header cabinet__tab-header cabinet__tab-header-data _active">Персональные данные</button>
+          <button class="tab-header cabinet__tab-header cabinet__tab-header-orders">Мои заказы</button>
+          <button class="btn-outline cabinet__header-btn">Сохранить изменения</button>
+        </div>
+      </div>
+      <div class="container">
         <div class="cabinet__body">
-          
+          <div class="tab-body cabinet__tab-body cabinet__tab-body-inputs _show">
+            <div class="order__inputs cabinet__inputs">
+              <div class="order__contacts cabinet__contacts">
+                <h3 class="order__inputs-title">Контактные данные</h3>
+                <div class="order__inputs__list">
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-phone">Ваш номер телефона:</label>
+                    </div>
+                    <input name="order__contacts-phone" type="tel" class="mask">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-email">Ваша электронная почта:</label>
+                    </div>
+                    <input name="order__contacts-email" type="email">
+                  </div>
+                </div>
+              </div>
+              <div class="order__address cabinet__address">
+                <h3 class="order__inputs-title">Адрес доставки</h3>
+                <div class="order__inputs__list">
+                  <div class="input order__contacts__input order__contacts__input-big">
+                    <div class="input__header">
+                      <label for="order__contacts-city">Город:</label>
+                    </div>
+                    <input name="order__contacts-city" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-house">Дом:</label>
+                    </div>
+                    <input name="order__contacts-house" type="email">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-apartment">Квартира:</label>
+                    </div>
+                    <input name="order__contacts-apartment" type="text">
+                  </div>
+                  <div class="input order__contacts__input order__contacts__input-big">
+                    <div class="input__header">
+                      <label for="order__contacts-street">Улица:</label>
+                    </div>
+                    <input name="order__contacts-street" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-doorway">Подъезд:</label>
+                    </div>
+                    <input name="order__contacts-doorway" type="text">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__contacts-floor">Этаж:</label>
+                    </div>
+                    <input name="order__contacts-floor" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="order__contacts cabinet__signin">
+                <h3 class="order__inputs-title">Данные для входа</h3>
+                <div class="order__inputs__list">
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__cabinet-signin-phone">Ваш номер телефона:</label>
+                    </div>
+                    <input name="order__cabinet-signin-phone" type="tel" class="mask">
+                  </div>
+                  <div class="input order__contacts__input">
+                    <div class="input__header">
+                      <label for="order__cabinet-signin-password">Пароль:</label>
+                    </div>
+                    <input name="order__cabinet-signin-password" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-outline cabinet__inputs-btn">Сохранить изменения</button> 
+          </div>
+          <div class="tab-body cabinet__tab-body cabinet__tab-body-table">
+            <div class="cabinet__table">
+              <table>
+                <tr>
+                  <td>№</td>
+                  <td>Дата</td>
+                  <td>Сумма</td>
+                  <td>Статус</td>
+                  <td>Адрес</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>15.05.2021</td>
+                  <td>5 490 RUB</td>
+                  <td>Отправлен</td>
+                  <td>Москва, ул. Сурганов 42</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>24.04.2021</td>
+                  <td>4 120 RUB</td>
+                  <td>Доставлен</td>
+                  <td>Москва, ул. Сурганов 42</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>04.02.2021</td>
+                  <td>7 500 RUB</td>
+                  <td>Доставлен</td>
+                  <td>Москва, ул. Сурганов 42</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </section>
