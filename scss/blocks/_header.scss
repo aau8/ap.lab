@@ -60,6 +60,7 @@
     filter: drop-shadow(0px 15px 30px rgba(34, 34, 34, 0.1));
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
 
     &::before {
       content: '';
@@ -212,12 +213,42 @@
   @media screen and (max-width: $wwa3 + px) {
     margin: 0; 
   }
+
+  &._catalog {
+    border: 1px solid $accent;
+    background: #fff;
+
+    & .header-catalog-btn-text {
+      display: none;
+
+      &-catalog {
+        display: inline; 
+        color: $accent;
+      }
+    }
+
+    & .header-catalog-btn-icon-burger {
+      display: none;
+    }
+
+    & .header-catalog-btn-icon-back {
+      display: block;
+    }
+  }
 }
 
 .header-catalog-btn-icon {
   width: 16px;
   height: 16px;
   margin: 0 12px 0 0;
+
+  &-back {
+    display: none;
+  }
+}
+
+.header-catalog-btn-text-catalog {
+  display: none;
 }
 
 .header__search {

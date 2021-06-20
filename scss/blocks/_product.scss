@@ -133,6 +133,11 @@
   display: flex;
   align-items: center;
   margin: 32px 0 0 0;
+
+  @media screen and (max-width: $wwa3 + px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .product__quantity {
@@ -153,19 +158,20 @@
     height: 100%;
   }
 }
-.product__quantity-minus {
-}
+
 .product__quantity-input {
   width: 40%;
   font-size: 16px;
   text-align: center;
 }
-.product__quantity-plus {
-  
-}
 
 .product__add-btn {
   margin: 0 0 0 12px;
+
+  @media screen and (max-width: $wwa3 + px) {
+    width: 100%;
+    margin: 12px 0 0 0;
+  }
 }
 
 .product__char {
@@ -209,4 +215,8 @@
   font-size: 28px;
   font-weight: 500;
   margin: -10px 0 0 0;
+
+  @media screen and (max-width: $wwa3 + px) {
+    margin: 0 0 0 0;
+  }
 }
