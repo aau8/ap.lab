@@ -233,3 +233,33 @@ function manualChange(changeInput) {
 `
 }
 }
+
+
+
+
+
+const mediaQuery = window.matchMedia('(max-width: 900px)')
+
+if (mediaQuery.matches) {
+  const searchInput = document.querySelector('.header__menu__block__search-input'),
+        searchModal = document.querySelector('.header__menu__block__search-modal');
+  
+  searchInput.onfocus = function() {
+    searchModal.classList.add('_show');
+  }
+  searchInput.onblur = function() {
+    searchModal.classList.remove('_show');
+  }
+  
+}
+else {
+  const searchInput = document.querySelector('.header__search-input'),
+        searchModal = document.querySelector('.header__search__modal-down');
+
+  searchInput.onfocus = function() {
+    searchModal.classList.add('_show');
+  }
+  searchInput.onblur = function() {
+    searchModal.classList.remove('_show');
+  }
+}
