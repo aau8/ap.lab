@@ -29,11 +29,13 @@
   &:hover {
 
     .catalog__menu-icon {
-      transform: scale(1.1);
+      // transform: scale(1.1);
+
+
     }
 
     .catalog__menu-text {
-      // color: $accent;
+      color: $accent;
     }
   }
 }
@@ -50,5 +52,5 @@
 .catalog__menu-text {
   color: $main;
   margin: 0 0 0 8px;
-  // transition: $tr;
+  transition: $tr;
 }

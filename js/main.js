@@ -234,10 +234,6 @@ function manualChange(changeInput) {
 }
 }
 
-
-
-
-
 const mediaQuery = window.matchMedia('(max-width: 900px)')
 
 if (mediaQuery.matches) {

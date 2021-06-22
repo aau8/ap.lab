@@ -15,12 +15,12 @@ $maxWidthContainer: 1160;
 $wwa: 1200;
 $wwa2: 900;
 $wwa3: 670;
-$minHover: 0; // если хочешь убрать hover на телефонах, укажи - 768px
 
 :root {
   --main: #222222;
   --second: #555555;
   --accent: #D2A158;
+  --accent-hover: #f0be73;
   --outline: #DADADA;
   --bg: #F6F3EF;
   --linear: linear-gradient(96.71deg, #FFBB3E 1.86%, #FF870F 118.91%);
@@ -30,6 +30,7 @@ $minHover: 0; // если хочешь убрать hover на телефона�
 $main: var(--main);
 $second: var(--second);
 $accent: var(--accent);
+$accent-hover: var(--accent-hover);
 $outline: var(--outline);
 $bg: var(--bg);
 $linear: var(--linear);
@@ -183,11 +184,9 @@ h5 {
   //   padding: 16px 32px;
   // }
 
-  @media screen and (min-width: $minHover) {
-    &:hover {
-      color: #fff;
-      background: #f0be73;
-    }
+  &:hover {
+    color: #fff;
+    background: $accent-hover;
   }
 
   // &:active {
@@ -206,10 +205,10 @@ h5 {
   text-align: center;
   transition: $tr;
 
-  @media screen and (min-width: $minHover) {
-    &:hover {
-      transform: translate(0,-4px);
-    }
+  &:hover {
+    border: 1px solid $accent-hover;
+    color: $accent-hover;
+    // transform: translate(0,-4px);
   }
 
   &:active {
@@ -249,10 +248,8 @@ h5 {
     opacity: 1;
   }
 
-  @media screen and (min-width: $minHover) {
-    &:hover {
-      transform: translate(0,-4px);
-    }
+  &:hover {
+    transform: translate(0,-4px);
   }
 
   &:active {

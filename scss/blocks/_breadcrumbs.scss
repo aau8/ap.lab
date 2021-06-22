@@ -45,6 +45,11 @@
     font-size: 14px;
     color: $main;
     white-space: nowrap;
+    transition: $tr;
+
+    &:hover {
+      color: $accent-hover;
+    }
   }
 
   &:last-child a {

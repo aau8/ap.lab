@@ -16,6 +16,13 @@
   display: flex;
   align-items: center;
 
+  &:hover {
+
+    & .section__header__all-icon {
+      transform: translate(4px,0);
+    }
+  }
+
   @media screen and (max-width: $wwa3 + px) {
     margin: 12px 0 0 0;
   }
@@ -28,6 +35,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0 0 10px;
+  transition: $tr;
 }
 
 // Маленькая карточка продукта
